@@ -1,0 +1,6 @@
+framework module Pods_GoodsOwner {
+  umbrella header "Pods-GoodsOwner-umbrella.h"
+
+  export *
+  module * { export * }
+}

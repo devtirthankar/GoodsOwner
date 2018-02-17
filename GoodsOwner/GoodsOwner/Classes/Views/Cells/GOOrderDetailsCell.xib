@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GOOrderDetailsCell" id="gTV-IL-0wX" customClass="GOOrderDetailsItemCell" customModule="GoodsOwner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A56-Nf-9QB">
+                        <rect key="frame" x="0.0" y="0.0" width="48" height="50"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NtF-Bz-7X8">
+                        <rect key="frame" x="144" y="0.0" width="96" height="50"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CQR-i6-0Da">
+                        <rect key="frame" x="240" y="0.0" width="80" height="50"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csO-f8-TR9">
+                        <rect key="frame" x="48" y="0.0" width="96" height="50"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="csO-f8-TR9" secondAttribute="bottom" id="2oB-Zt-2Kp"/>
+                <constraint firstItem="NtF-Bz-7X8" firstAttribute="leading" secondItem="csO-f8-TR9" secondAttribute="trailing" id="3tZ-3M-E1s"/>
+                <constraint firstItem="NtF-Bz-7X8" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.3" id="6Yf-HS-eSh"/>
+                <constraint firstAttribute="trailing" secondItem="CQR-i6-0Da" secondAttribute="trailing" id="8Vv-kb-7tj"/>
+                <constraint firstItem="CQR-i6-0Da" firstAttribute="leading" secondItem="NtF-Bz-7X8" secondAttribute="trailing" id="ClW-W4-kjN"/>
+                <constraint firstAttribute="bottom" secondItem="NtF-Bz-7X8" secondAttribute="bottom" id="Hz6-HB-DYp"/>
+                <constraint firstItem="csO-f8-TR9" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="Q4y-Rk-YX5"/>
+                <constraint firstAttribute="bottom" secondItem="A56-Nf-9QB" secondAttribute="bottom" id="Rcd-pr-PNK"/>
+                <constraint firstItem="A56-Nf-9QB" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="acN-Iz-SSm"/>
+                <constraint firstItem="A56-Nf-9QB" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.15" id="fWZ-Ea-a7C"/>
+                <constraint firstItem="CQR-i6-0Da" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.25" id="oE3-fV-GBs"/>
+                <constraint firstItem="A56-Nf-9QB" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="qJT-im-h0H"/>
+                <constraint firstItem="CQR-i6-0Da" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="rNy-sQ-D8Z"/>
+                <constraint firstItem="csO-f8-TR9" firstAttribute="leading" secondItem="A56-Nf-9QB" secondAttribute="trailing" id="sAu-A2-JJ3"/>
+                <constraint firstAttribute="bottom" secondItem="CQR-i6-0Da" secondAttribute="bottom" id="tNR-sn-o7X"/>
+                <constraint firstItem="csO-f8-TR9" firstAttribute="width" secondItem="gTV-IL-0wX" secondAttribute="width" multiplier="0.3" id="vSi-zx-ynf"/>
+                <constraint firstItem="NtF-Bz-7X8" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="xkK-6s-sfa"/>
+            </constraints>
+            <size key="customSize" width="255" height="54"/>
+            <point key="canvasLocation" x="7" y="-41"/>
+        </collectionViewCell>
+    </objects>
+</document>
