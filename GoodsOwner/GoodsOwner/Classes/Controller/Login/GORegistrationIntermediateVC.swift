@@ -9,6 +9,9 @@
 import UIKit
 
 class GORegistrationIntermediateVC: GOBaseVC {
+    
+    @IBOutlet weak var checkBoxImage: UIImageView!
+    var isCheckBoxPressed : Bool = false
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,15 +24,27 @@ class GORegistrationIntermediateVC: GOBaseVC {
         // Dispose of any resources that can be recreated.
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @IBAction func backButtonPressed(_ sender: UIButton) {
+        _ = self.navigationController?.popViewController(animated: true)
     }
-    */
+    
+    @IBAction func submitButtonPressed(_ sender: UIButton) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let controller = storyboard.instantiateViewController(withIdentifier: "GOTabBarController")
+        self.navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    @IBAction func checkBoxPressed(_ sender: UIButton) {
+        
+        if isCheckBoxPressed {
+            isCheckBoxPressed = false
+            checkBoxImage.image = UIImage.init(named: "checkboxUns")
+        }
+        else {
+            isCheckBoxPressed = true
+            checkBoxImage.image = UIImage.init(named: "checkboxSel")
+        }
+        
+    }
 
 }

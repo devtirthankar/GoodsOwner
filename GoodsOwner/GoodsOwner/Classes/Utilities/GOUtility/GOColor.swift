@@ -10,7 +10,7 @@ import Foundation
 
 enum GOColor {
     
-    static let  ThemeColor = "4db6ac"//"78cdc0"//ff7043"//"#8ec5ce"
+    static let  ThemeColor = "29be88"//"4db6ac"//ff7043"//"#8ec5ce"
     static let  Green = "#78cdc0"
     static let  Yellow = "#ffc005"
     static let  Red = "#ea5c5c"
