@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="GOProductHeader" id="U6b-Vx-4bR" customClass="GOProductHeader" customModule="GoodsOwner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="50"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kW9-4f-yZA">
+                    <rect key="frame" x="0.0" y="48" width="320" height="2"/>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="DPq-tG-O2q"/>
+                    </constraints>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SB0-wn-rRx">
+                    <rect key="frame" x="2" y="0.0" width="104" height="50"/>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                    <color key="textColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Q7a-Dr-Isq">
+                    <rect key="frame" x="108" y="0.0" width="104" height="50"/>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                    <color key="textColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rbu-IC-MVa">
+                    <rect key="frame" x="214" y="0.0" width="104" height="50"/>
+                    <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                    <color key="textColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <constraints>
+                <constraint firstItem="rbu-IC-MVa" firstAttribute="width" secondItem="SB0-wn-rRx" secondAttribute="width" id="0Ei-AX-ATo"/>
+                <constraint firstItem="VXr-Tz-HHm" firstAttribute="trailing" secondItem="rbu-IC-MVa" secondAttribute="trailing" constant="2" id="1wE-YK-p5H"/>
+                <constraint firstItem="Q7a-Dr-Isq" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="9TW-Yg-7ub"/>
+                <constraint firstItem="rbu-IC-MVa" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="B8s-PT-JWJ"/>
+                <constraint firstItem="Q7a-Dr-Isq" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="Bij-1U-FK3"/>
+                <constraint firstItem="kW9-4f-yZA" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" id="D2M-Jl-jq2"/>
+                <constraint firstItem="Q7a-Dr-Isq" firstAttribute="leading" secondItem="SB0-wn-rRx" secondAttribute="trailing" constant="2" id="HMH-O1-TeD"/>
+                <constraint firstItem="kW9-4f-yZA" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="HRi-OC-xGJ"/>
+                <constraint firstItem="kW9-4f-yZA" firstAttribute="trailing" secondItem="VXr-Tz-HHm" secondAttribute="trailing" id="JKv-71-1Oh"/>
+                <constraint firstItem="SB0-wn-rRx" firstAttribute="top" secondItem="VXr-Tz-HHm" secondAttribute="top" id="NXZ-dB-5EW"/>
+                <constraint firstItem="rbu-IC-MVa" firstAttribute="leading" secondItem="Q7a-Dr-Isq" secondAttribute="trailing" constant="2" id="Rw2-oy-FC9"/>
+                <constraint firstItem="SB0-wn-rRx" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="UrK-ef-Ha6"/>
+                <constraint firstItem="Q7a-Dr-Isq" firstAttribute="width" secondItem="SB0-wn-rRx" secondAttribute="width" id="W3o-ox-bdT"/>
+                <constraint firstItem="SB0-wn-rRx" firstAttribute="leading" secondItem="VXr-Tz-HHm" secondAttribute="leading" constant="2" id="nYn-Fb-okl"/>
+                <constraint firstItem="rbu-IC-MVa" firstAttribute="bottom" secondItem="VXr-Tz-HHm" secondAttribute="bottom" id="sbM-ij-Mwa"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="VXr-Tz-HHm"/>
+            <connections>
+                <outlet property="column1Label" destination="SB0-wn-rRx" id="rdA-5Q-WFS"/>
+                <outlet property="column2Label" destination="Q7a-Dr-Isq" id="mjW-48-vNo"/>
+                <outlet property="column3Label" destination="rbu-IC-MVa" id="Biw-An-u45"/>
+            </connections>
+            <point key="canvasLocation" x="8" y="-102"/>
+        </collectionReusableView>
+    </objects>
+</document>

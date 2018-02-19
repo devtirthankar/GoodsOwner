@@ -37,6 +37,10 @@
 		0D8ADEF020330EA900764884 /* GORegistrationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8ADEEE20330EA900764884 /* GORegistrationCell.xib */; };
 		0D8ADEF22033F04A00764884 /* GORegistrationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8ADEF12033F04A00764884 /* GORegistrationHeader.swift */; };
 		0D8ADEF42033F05A00764884 /* GORegistrationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8ADEF32033F05A00764884 /* GORegistrationHeader.xib */; };
+		0DC57A28203ADA4F00A760D0 /* GOProductHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC57A26203ADA4D00A760D0 /* GOProductHeader.swift */; };
+		0DC57A29203ADA5000A760D0 /* GOProductHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC57A27203ADA4E00A760D0 /* GOProductHeader.xib */; };
+		0DC99B7C203AE43D00C8F46F /* GOProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC99B7A203AE43D00C8F46F /* GOProductCell.swift */; };
+		0DC99B7D203AE43D00C8F46F /* GOProductCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC99B7B203AE43D00C8F46F /* GOProductCell.xib */; };
 		0DCE363F202CA2F60081D962 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE363D202CA2F60081D962 /* Info.plist */; };
 		0DCE3640202CA2F60081D962 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE363E202CA2F60081D962 /* Assets.xcassets */; };
 		0DCE3644202CA41A0081D962 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DCE3641202CA41A0081D962 /* LaunchScreen.storyboard */; };
@@ -84,6 +88,10 @@
 		0D8ADEEE20330EA900764884 /* GORegistrationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GORegistrationCell.xib; sourceTree = "<group>"; };
 		0D8ADEF12033F04A00764884 /* GORegistrationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GORegistrationHeader.swift; sourceTree = "<group>"; };
 		0D8ADEF32033F05A00764884 /* GORegistrationHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GORegistrationHeader.xib; sourceTree = "<group>"; };
+		0DC57A26203ADA4D00A760D0 /* GOProductHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProductHeader.swift; sourceTree = "<group>"; };
+		0DC57A27203ADA4E00A760D0 /* GOProductHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOProductHeader.xib; sourceTree = "<group>"; };
+		0DC99B7A203AE43D00C8F46F /* GOProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProductCell.swift; sourceTree = "<group>"; };
+		0DC99B7B203AE43D00C8F46F /* GOProductCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOProductCell.xib; sourceTree = "<group>"; };
 		0DCE363D202CA2F60081D962 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DCE363E202CA2F60081D962 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0DCE3641202CA41A0081D962 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -151,10 +159,10 @@
 			children = (
 				0D040FF6200944FA00F36EC3 /* Controller */,
 				0D040FF7200944FA00F36EC3 /* Main */,
-				0D040FF8200944FA00F36EC3 /* Model */,
 				0D040FF9200944FA00F36EC3 /* Utilities */,
 				0D040FFA200944FA00F36EC3 /* Views */,
-				0D040FFB200944FA00F36EC3 /* Web */,
+				0DC57A24203AC90300A760D0 /* Web */,
+				0DC57A23203AC8CC00A760D0 /* Model */,
 				0D040FFF2009AE0D00F36EC3 /* GOBaseVC.swift */,
 			);
 			path = Classes;
@@ -180,19 +188,12 @@
 			path = Main;
 			sourceTree = "<group>";
 		};
-		0D040FF8200944FA00F36EC3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		0D040FF9200944FA00F36EC3 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				0DC57A25203AC94500A760D0 /* Vendor */,
 				0D0410012009AE8F00F36EC3 /* CocoaAdditions */,
 				0D0410032009AE8F00F36EC3 /* GOUtility */,
-				0D0410062009AE8F00F36EC3 /* Vendor */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -203,13 +204,6 @@
 				0D8ADEEA20330D9400764884 /* Cells */,
 			);
 			path = Views;
-			sourceTree = "<group>";
-		};
-		0D040FFB200944FA00F36EC3 /* Web */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Web;
 			sourceTree = "<group>";
 		};
 		0D040FFC2009455100F36EC3 /* Resources */ = {
@@ -236,13 +230,6 @@
 				0D8ADEE8203301EB00764884 /* GOButton.swift */,
 			);
 			path = GOUtility;
-			sourceTree = "<group>";
-		};
-		0D0410062009AE8F00F36EC3 /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
 			sourceTree = "<group>";
 		};
 		0D04100A2009AF1300F36EC3 /* Dashboard */ = {
@@ -312,8 +299,33 @@
 				0D4769F1203448E300F27966 /* GOOrderDetailsCell.xib */,
 				0D4769F42034493000F27966 /* GOOrderDetailsHeader.swift */,
 				0D4769F52034493000F27966 /* GOOrderDetailsHeader.xib */,
+				0DC57A26203ADA4D00A760D0 /* GOProductHeader.swift */,
+				0DC57A27203ADA4E00A760D0 /* GOProductHeader.xib */,
+				0DC99B7A203AE43D00C8F46F /* GOProductCell.swift */,
+				0DC99B7B203AE43D00C8F46F /* GOProductCell.xib */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		0DC57A23203AC8CC00A760D0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0DC57A24203AC90300A760D0 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		0DC57A25203AC94500A760D0 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
 			sourceTree = "<group>";
 		};
 		0DCE3637202B56EC0081D962 /* Storyboards */ = {
@@ -398,6 +410,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0D843B082030529200AB0FA8 /* Products.storyboard in Resources */,
+				0DC99B7D203AE43D00C8F46F /* GOProductCell.xib in Resources */,
 				0DCE3644202CA41A0081D962 /* LaunchScreen.storyboard in Resources */,
 				0DCE363F202CA2F60081D962 /* Info.plist in Resources */,
 				0D8ADEF42033F05A00764884 /* GORegistrationHeader.xib in Resources */,
@@ -405,6 +418,7 @@
 				0D4769F3203448E300F27966 /* GOOrderDetailsCell.xib in Resources */,
 				0D8ADEF020330EA900764884 /* GORegistrationCell.xib in Resources */,
 				0DCE3646202CA41A0081D962 /* Login.storyboard in Resources */,
+				0DC57A29203ADA5000A760D0 /* GOProductHeader.xib in Resources */,
 				0DCE3645202CA41A0081D962 /* Main.storyboard in Resources */,
 				0D4769F72034493000F27966 /* GOOrderDetailsHeader.xib in Resources */,
 			);
@@ -491,6 +505,7 @@
 				0DCE364C202D60490081D962 /* GORegistrationVC.swift in Sources */,
 				0DCE3648202CA4B40081D962 /* GOSignInVC.swift in Sources */,
 				0D843AFC202FF94700AB0FA8 /* GONavDrawerVC.swift in Sources */,
+				0DC57A28203ADA4F00A760D0 /* GOProductHeader.swift in Sources */,
 				0D843B152031775A00AB0FA8 /* GOOutOfStockVC.swift in Sources */,
 				0D0410092009AE8F00F36EC3 /* GOColor.swift in Sources */,
 				0D8ADEF22033F04A00764884 /* GORegistrationHeader.swift in Sources */,
@@ -500,6 +515,7 @@
 				0D843B132031773300AB0FA8 /* GOModifyProductVC.swift in Sources */,
 				0D0748062036F7CB0023EA9D /* GORegistrationIntermediateVC.swift in Sources */,
 				0D843AFE2030136500AB0FA8 /* GOProductsVC.swift in Sources */,
+				0DC99B7C203AE43D00C8F46F /* GOProductCell.swift in Sources */,
 				0D8ADEE9203301EB00764884 /* GOButton.swift in Sources */,
 				0DCE364A202D553A0081D962 /* GOTabBarController.swift in Sources */,
 				0D0748042036F0730023EA9D /* GOWebPageVC.swift in Sources */,

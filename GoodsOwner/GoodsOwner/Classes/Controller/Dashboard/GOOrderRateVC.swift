@@ -20,11 +20,24 @@ class GOOrderRateVC: GOBaseVC {
     @IBOutlet weak var noOfThreeStars: UILabel!
     @IBOutlet weak var noOfTwoStars: UILabel!
     @IBOutlet weak var noOfOneStars: UILabel!
+    
+    @IBOutlet var greenStars: [UIImageView]!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        
+        for greenStar in greenStars{
+            
+            //let view = greenStar as! UIImageView
+            //greenStar.backgroundColor = UIColor.colorForHex(GOColor.ThemeColor as NSString)
+            greenStar.image = greenStar.image!.withRenderingMode(.alwaysTemplate)
+            greenStar.tintColor = UIColor.colorForHex(GOColor.ThemeColor as NSString)
+            
+        }
+        
+        
     }
 
     override func didReceiveMemoryWarning() {
