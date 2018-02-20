@@ -933,116 +933,8 @@
                                     <constraint firstItem="avq-do-lpq" firstAttribute="leading" secondItem="JEP-Os-mIt" secondAttribute="leading" constant="8" id="r7X-4c-yxg"/>
                                 </constraints>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rM7-GW-VeC">
-                                <rect key="frame" x="0.0" y="430" width="375" height="229"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVN-Tq-0Il">
-                                        <rect key="frame" x="0.0" y="194" width="143" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
-                                        <state key="normal" title="Cancel">
-                                            <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2C-S4-VV7">
-                                        <rect key="frame" x="187" y="194" width="149" height="30"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="18"/>
-                                        <state key="normal" title="Accept">
-                                            <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                    </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Payment method:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKY-zU-9Jd">
-                                        <rect key="frame" x="0.0" y="58" width="152" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="VAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ep-50-L31">
-                                        <rect key="frame" x="115" y="3" width="152" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Total Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mn-09-995">
-                                        <rect key="frame" x="115" y="23" width="99" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F20-ZJ-vJF">
-                                        <rect key="frame" x="0.0" y="87" width="80" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54q-Gb-7q8">
-                                        <rect key="frame" x="96" y="87" width="80" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Day" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LG0-NC-LuX">
-                                        <rect key="frame" x="96" y="116" width="80" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Pick up time" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMl-LE-hVJ">
-                                        <rect key="frame" x="96" y="149" width="118" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="dd-mm-yyyy" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOZ-A9-gTb">
-                                        <rect key="frame" x="196" y="87" width="139" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Monday" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7W-e4-lmn">
-                                        <rect key="frame" x="196" y="116" width="139" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="11am" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVa-nQ-vBw">
-                                        <rect key="frame" x="222" y="149" width="113" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="xxx" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weG-0N-sAk">
-                                        <rect key="frame" x="222" y="0.0" width="152" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="xxx" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgX-Q7-llp">
-                                        <rect key="frame" x="222" y="20" width="152" height="21"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
-                                        <nil key="textColor"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                            </view>
-                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cpa-F4-PzP">
-                                <rect key="frame" x="0.0" y="62" width="375" height="347"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Cpa-F4-PzP">
+                                <rect key="frame" x="0.0" y="64" width="375" height="343"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CHq-s8-TRK">
                                     <size key="itemSize" width="50" height="50"/>
@@ -1056,11 +948,184 @@
                                     <outlet property="delegate" destination="fgj-fF-4E8" id="gNy-hw-stw"/>
                                 </connections>
                             </collectionView>
+                            <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rM7-GW-VeC">
+                                <rect key="frame" x="0.0" y="407" width="375" height="260"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eVN-Tq-0Il" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
+                                        <rect key="frame" x="8" y="220" width="175.5" height="32"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="17"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t2C-S4-VV7" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
+                                        <rect key="frame" x="191.5" y="219" width="175.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="18"/>
+                                        <state key="normal" title="Accept">
+                                            <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Payment method:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bKY-zU-9Jd">
+                                        <rect key="frame" x="20" y="93.5" width="127" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VAT" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Ep-50-L31">
+                                        <rect key="frame" x="241.5" y="19" width="27.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total Price" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2Mn-09-995">
+                                        <rect key="frame" x="194" y="48" width="75" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F20-ZJ-vJF">
+                                        <rect key="frame" x="20" y="120.5" width="54" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Date:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="54q-Gb-7q8">
+                                        <rect key="frame" x="201" y="120.5" width="38" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LG0-NC-LuX">
+                                        <rect key="frame" x="206.5" y="149.5" width="32.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pick up time:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMl-LE-hVJ">
+                                        <rect key="frame" x="145.5" y="178.5" width="93.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="dd-mm-yyyy" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uOZ-A9-gTb">
+                                        <rect key="frame" x="247" y="119.5" width="120" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="eAx-zm-Sga"/>
+                                            <constraint firstAttribute="height" constant="21" id="u6z-YZ-yMg"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Monday" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7W-e4-lmn">
+                                        <rect key="frame" x="247" y="148.5" width="120" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="HBT-48-oG7"/>
+                                            <constraint firstAttribute="height" constant="21" id="jZL-aW-m6A"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11am" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WVa-nQ-vBw">
+                                        <rect key="frame" x="247" y="177.5" width="120" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="LSW-Ui-cFY"/>
+                                            <constraint firstAttribute="width" constant="120" id="qVY-ik-Z96"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="14.4" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="weG-0N-sAk">
+                                        <rect key="frame" x="276.5" y="18" width="90" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="ZON-6A-Dtb"/>
+                                            <constraint firstAttribute="height" constant="21" id="wN1-tN-m8C"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1050" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tgX-Q7-llp">
+                                        <rect key="frame" x="277" y="47" width="90" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="90" id="Hup-ut-BIY"/>
+                                            <constraint firstAttribute="height" constant="21" id="s9S-br-7ki"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6WO-em-61q">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="2"/>
+                                        <color key="backgroundColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="2" id="nvm-jL-11O"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cash on pickup" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AjF-mq-qAv">
+                                        <rect key="frame" x="254.5" y="92.5" width="112.5" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="21" id="J7Y-fF-0Am"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="weG-0N-sAk" firstAttribute="centerY" secondItem="9Ep-50-L31" secondAttribute="centerY" id="0aO-tR-eGz"/>
+                                    <constraint firstAttribute="trailing" secondItem="weG-0N-sAk" secondAttribute="trailing" constant="8" id="19a-ay-vRj"/>
+                                    <constraint firstItem="uOZ-A9-gTb" firstAttribute="leading" secondItem="54q-Gb-7q8" secondAttribute="trailing" constant="8" id="1OQ-Ia-Gld"/>
+                                    <constraint firstItem="tgX-Q7-llp" firstAttribute="leading" secondItem="2Mn-09-995" secondAttribute="trailing" constant="8" id="3ng-4c-BrH"/>
+                                    <constraint firstItem="tgX-Q7-llp" firstAttribute="top" secondItem="weG-0N-sAk" secondAttribute="bottom" constant="8" id="5E8-LT-ogh"/>
+                                    <constraint firstItem="a7W-e4-lmn" firstAttribute="top" secondItem="uOZ-A9-gTb" secondAttribute="bottom" constant="8" id="6my-oY-Jx3"/>
+                                    <constraint firstItem="weG-0N-sAk" firstAttribute="leading" secondItem="9Ep-50-L31" secondAttribute="trailing" constant="8" id="8Uu-qS-SP2"/>
+                                    <constraint firstItem="uOZ-A9-gTb" firstAttribute="centerY" secondItem="54q-Gb-7q8" secondAttribute="centerY" id="9n7-C9-SQ1"/>
+                                    <constraint firstItem="54q-Gb-7q8" firstAttribute="centerY" secondItem="F20-ZJ-vJF" secondAttribute="centerY" id="Coo-Pf-UW3"/>
+                                    <constraint firstItem="uOZ-A9-gTb" firstAttribute="centerY" secondItem="rM7-GW-VeC" secondAttribute="centerY" id="FPW-Wn-edR"/>
+                                    <constraint firstAttribute="bottom" secondItem="t2C-S4-VV7" secondAttribute="bottom" constant="8" id="Fhi-xY-bQW"/>
+                                    <constraint firstItem="t2C-S4-VV7" firstAttribute="leading" secondItem="eVN-Tq-0Il" secondAttribute="trailing" constant="8" id="GWf-mq-Dsp"/>
+                                    <constraint firstAttribute="trailing" secondItem="AjF-mq-qAv" secondAttribute="trailing" constant="8" id="J0m-4M-Yk6"/>
+                                    <constraint firstAttribute="trailing" secondItem="uOZ-A9-gTb" secondAttribute="trailing" constant="8" id="JWH-YI-K3B"/>
+                                    <constraint firstItem="weG-0N-sAk" firstAttribute="top" secondItem="6WO-em-61q" secondAttribute="bottom" constant="16" id="KmZ-gv-UB1"/>
+                                    <constraint firstAttribute="trailing" secondItem="tgX-Q7-llp" secondAttribute="trailing" constant="8" id="MBV-1h-c1c"/>
+                                    <constraint firstAttribute="trailing" secondItem="WVa-nQ-vBw" secondAttribute="trailing" constant="8" id="S4Y-vf-iZZ"/>
+                                    <constraint firstAttribute="trailing" secondItem="t2C-S4-VV7" secondAttribute="trailing" constant="8" id="SEc-nU-gel"/>
+                                    <constraint firstItem="6WO-em-61q" firstAttribute="leading" secondItem="rM7-GW-VeC" secondAttribute="leading" id="Srw-jx-Bbe"/>
+                                    <constraint firstItem="a7W-e4-lmn" firstAttribute="centerY" secondItem="LG0-NC-LuX" secondAttribute="centerY" id="XPi-el-ZKB"/>
+                                    <constraint firstAttribute="height" constant="260" id="XXS-ug-L6t"/>
+                                    <constraint firstItem="F20-ZJ-vJF" firstAttribute="leading" secondItem="rM7-GW-VeC" secondAttribute="leading" constant="20" id="ZqP-Uv-aiv"/>
+                                    <constraint firstItem="eVN-Tq-0Il" firstAttribute="leading" secondItem="rM7-GW-VeC" secondAttribute="leading" constant="8" id="eOh-TC-9VW"/>
+                                    <constraint firstItem="tgX-Q7-llp" firstAttribute="centerY" secondItem="2Mn-09-995" secondAttribute="centerY" id="eod-J0-HhP"/>
+                                    <constraint firstItem="AjF-mq-qAv" firstAttribute="centerY" secondItem="bKY-zU-9Jd" secondAttribute="centerY" id="fAL-ym-mYT"/>
+                                    <constraint firstItem="t2C-S4-VV7" firstAttribute="width" secondItem="eVN-Tq-0Il" secondAttribute="width" id="hGy-mX-QY6"/>
+                                    <constraint firstItem="WVa-nQ-vBw" firstAttribute="leading" secondItem="lMl-LE-hVJ" secondAttribute="trailing" constant="8" id="hPz-60-6zZ"/>
+                                    <constraint firstItem="6WO-em-61q" firstAttribute="top" secondItem="rM7-GW-VeC" secondAttribute="top" id="kV1-TX-RJv"/>
+                                    <constraint firstItem="WVa-nQ-vBw" firstAttribute="centerY" secondItem="lMl-LE-hVJ" secondAttribute="centerY" id="n33-Sp-eHk"/>
+                                    <constraint firstItem="F20-ZJ-vJF" firstAttribute="top" secondItem="bKY-zU-9Jd" secondAttribute="bottom" constant="8" id="ndQ-q6-egu"/>
+                                    <constraint firstItem="WVa-nQ-vBw" firstAttribute="top" secondItem="a7W-e4-lmn" secondAttribute="bottom" constant="8" id="o20-lh-m6p"/>
+                                    <constraint firstAttribute="trailing" secondItem="6WO-em-61q" secondAttribute="trailing" id="qrb-VN-PLP"/>
+                                    <constraint firstItem="bKY-zU-9Jd" firstAttribute="leading" secondItem="rM7-GW-VeC" secondAttribute="leading" constant="20" id="sSm-Rg-Rz2"/>
+                                    <constraint firstAttribute="trailing" secondItem="a7W-e4-lmn" secondAttribute="trailing" constant="8" id="uFX-Bq-OVT"/>
+                                    <constraint firstAttribute="bottom" secondItem="eVN-Tq-0Il" secondAttribute="bottom" constant="8" id="zGo-Rg-vAA"/>
+                                    <constraint firstItem="a7W-e4-lmn" firstAttribute="leading" secondItem="LG0-NC-LuX" secondAttribute="trailing" constant="8" id="zqP-EA-Dms"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstAttribute="trailing" secondItem="Cpa-F4-PzP" secondAttribute="trailing" id="1hy-hv-Nlh"/>
                             <constraint firstItem="JEP-Os-mIt" firstAttribute="leading" secondItem="8Gn-mr-036" secondAttribute="leading" id="Dyv-07-SZJ"/>
+                            <constraint firstItem="rM7-GW-VeC" firstAttribute="leading" secondItem="8Gn-mr-036" secondAttribute="leading" id="JhL-Mk-ViD"/>
+                            <constraint firstItem="Cpa-F4-PzP" firstAttribute="top" secondItem="JEP-Os-mIt" secondAttribute="bottom" id="Pez-H4-Gci"/>
+                            <constraint firstAttribute="trailing" secondItem="rM7-GW-VeC" secondAttribute="trailing" id="Vb9-0o-6mQ"/>
+                            <constraint firstItem="Nxk-cA-NlB" firstAttribute="top" secondItem="rM7-GW-VeC" secondAttribute="bottom" id="YmO-wC-aDa"/>
+                            <constraint firstItem="Cpa-F4-PzP" firstAttribute="leading" secondItem="8Gn-mr-036" secondAttribute="leading" id="hMm-49-FDN"/>
                             <constraint firstAttribute="trailing" secondItem="JEP-Os-mIt" secondAttribute="trailing" id="nMv-x0-K8e"/>
+                            <constraint firstItem="rM7-GW-VeC" firstAttribute="top" secondItem="Cpa-F4-PzP" secondAttribute="bottom" id="yPp-bj-BxY"/>
                             <constraint firstItem="JEP-Os-mIt" firstAttribute="top" secondItem="8Gn-mr-036" secondAttribute="top" id="ysJ-nj-BMi"/>
                         </constraints>
                     </view>

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,48 +22,58 @@
             <autoresizingMask key="autoresizingMask"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SL#" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="miH-Dt-rks">
-                    <rect key="frame" x="0.0" y="0.0" width="48" height="50"/>
+                    <rect key="frame" x="0.0" y="0.0" width="48" height="48"/>
                     <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="msF-Ao-Xoc">
-                    <rect key="frame" x="144" y="0.0" width="96" height="50"/>
+                    <rect key="frame" x="144" y="0.0" width="96" height="48"/>
                     <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SR0-J5-ZQV">
-                    <rect key="frame" x="240" y="0.0" width="80" height="50"/>
+                    <rect key="frame" x="240" y="0.0" width="80" height="48"/>
                     <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prod. No" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ljd-a9-qqK">
-                    <rect key="frame" x="48" y="0.0" width="96" height="50"/>
+                    <rect key="frame" x="48" y="0.0" width="96" height="48"/>
                     <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="15"/>
-                    <nil key="textColor"/>
+                    <color key="textColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     <nil key="highlightedColor"/>
                 </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="INp-bO-DMh">
+                    <rect key="frame" x="0.0" y="48" width="320" height="2"/>
+                    <color key="backgroundColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="2" id="5Cs-TF-i3T"/>
+                    </constraints>
+                </view>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="miH-Dt-rks" firstAttribute="bottom" secondItem="U6b-Vx-4bR" secondAttribute="bottom" id="4SO-01-egd"/>
                 <constraint firstItem="miH-Dt-rks" firstAttribute="width" secondItem="U6b-Vx-4bR" secondAttribute="width" multiplier="0.15" id="7m0-S6-X5D"/>
                 <constraint firstItem="Ljd-a9-qqK" firstAttribute="width" secondItem="U6b-Vx-4bR" secondAttribute="width" multiplier="0.3" id="BRe-5Y-Krd"/>
                 <constraint firstItem="SR0-J5-ZQV" firstAttribute="width" secondItem="U6b-Vx-4bR" secondAttribute="width" multiplier="0.25" id="Bqk-zm-vVp"/>
                 <constraint firstItem="SR0-J5-ZQV" firstAttribute="leading" secondItem="msF-Ao-Xoc" secondAttribute="trailing" id="IvK-rC-h3I"/>
+                <constraint firstItem="INp-bO-DMh" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="Lha-JV-fPX"/>
                 <constraint firstItem="miH-Dt-rks" firstAttribute="leading" secondItem="U6b-Vx-4bR" secondAttribute="leading" id="MWH-sA-5lc"/>
                 <constraint firstItem="msF-Ao-Xoc" firstAttribute="leading" secondItem="Ljd-a9-qqK" secondAttribute="trailing" id="OKz-XW-oDs"/>
-                <constraint firstItem="msF-Ao-Xoc" firstAttribute="bottom" secondItem="U6b-Vx-4bR" secondAttribute="bottom" id="QSu-Vh-ona"/>
-                <constraint firstItem="Ljd-a9-qqK" firstAttribute="bottom" secondItem="U6b-Vx-4bR" secondAttribute="bottom" id="WJe-SC-gkF"/>
+                <constraint firstItem="INp-bO-DMh" firstAttribute="top" secondItem="Ljd-a9-qqK" secondAttribute="bottom" id="P1h-IL-RGW"/>
+                <constraint firstItem="INp-bO-DMh" firstAttribute="top" secondItem="msF-Ao-Xoc" secondAttribute="bottom" id="Ssn-wT-zrq"/>
                 <constraint firstItem="msF-Ao-Xoc" firstAttribute="width" secondItem="U6b-Vx-4bR" secondAttribute="width" multiplier="0.3" id="Xvr-5d-DJe"/>
+                <constraint firstAttribute="trailing" secondItem="INp-bO-DMh" secondAttribute="trailing" id="ZSp-8W-68D"/>
                 <constraint firstItem="msF-Ao-Xoc" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="dg3-ZS-IFd"/>
                 <constraint firstItem="Ljd-a9-qqK" firstAttribute="leading" secondItem="miH-Dt-rks" secondAttribute="trailing" id="eUK-mL-cOR"/>
                 <constraint firstItem="Ljd-a9-qqK" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="enh-P9-7Ut"/>
                 <constraint firstItem="SR0-J5-ZQV" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="jeC-dd-WEM"/>
                 <constraint firstItem="SR0-J5-ZQV" firstAttribute="trailing" secondItem="U6b-Vx-4bR" secondAttribute="trailing" id="myU-Jo-Tua"/>
-                <constraint firstItem="SR0-J5-ZQV" firstAttribute="bottom" secondItem="U6b-Vx-4bR" secondAttribute="bottom" id="wl5-xl-h2n"/>
+                <constraint firstItem="INp-bO-DMh" firstAttribute="top" secondItem="SR0-J5-ZQV" secondAttribute="bottom" id="oHW-tk-Vsz"/>
+                <constraint firstAttribute="bottom" secondItem="INp-bO-DMh" secondAttribute="bottom" id="pgj-dM-61T"/>
+                <constraint firstItem="INp-bO-DMh" firstAttribute="top" secondItem="miH-Dt-rks" secondAttribute="bottom" id="uXQ-mj-jJE"/>
                 <constraint firstItem="miH-Dt-rks" firstAttribute="top" secondItem="U6b-Vx-4bR" secondAttribute="top" id="wo2-EZ-rYx"/>
             </constraints>
             <connections>

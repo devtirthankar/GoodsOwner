@@ -11,7 +11,7 @@ import UIKit
 class GOOrderReceivedVC: GOBaseVC {
     
     let _cellReuseIdentifier = "GOOrderReceivedTableCell"
-     @IBOutlet weak var _tableView: UITableView!
+    @IBOutlet weak var _tableView: UITableView!
 
     override func viewDidLoad() {
         super.viewDidLoad()

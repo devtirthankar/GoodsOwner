@@ -47,7 +47,7 @@ extension GODeleteProductVC: UICollectionViewDelegate, UICollectionViewDataSourc
         cell.modifyView.isHidden = true
         let prodNumber = indexPath.row + 1
         cell.column1Text.text = "\(prodNumber)"
-        cell.column2Text.text = "Product \(prodNumber)"
+        cell.column2Text.text = "Product \(prodNumber) on the way."
         return cell
     }
     

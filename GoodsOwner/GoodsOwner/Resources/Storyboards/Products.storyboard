@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H2G-JN-nGh">
-                                        <rect key="frame" x="60" y="19.5" width="255" height="25"/>
+                                        <rect key="frame" x="60" y="19" width="255" height="26"/>
                                         <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -70,7 +70,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ePB-w3-MfZ" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
-                                <rect key="frame" x="16" y="235.5" width="343" height="33"/>
+                                <rect key="frame" x="16" y="235" width="343" height="33"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="18"/>
                                 <state key="normal" title="Add Product">
                                     <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -80,7 +80,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W9f-dC-XiN" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
-                                <rect key="frame" x="16" y="276.5" width="343" height="33"/>
+                                <rect key="frame" x="16" y="276" width="343" height="33"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="18"/>
                                 <state key="normal" title="Delete Product">
                                     <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -90,7 +90,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9OB-23-K9V" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
-                                <rect key="frame" x="16" y="317.5" width="343" height="33"/>
+                                <rect key="frame" x="16" y="317" width="343" height="33"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="18"/>
                                 <state key="normal" title="Modify Product">
                                     <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -100,7 +100,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gsF-01-XVG" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
-                                <rect key="frame" x="16" y="358.5" width="343" height="33"/>
+                                <rect key="frame" x="16" y="358" width="343" height="33"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="18"/>
                                 <state key="normal" title="Out of Stock (#)">
                                     <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -110,7 +110,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aBd-56-qpf" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
-                                <rect key="frame" x="16" y="399.5" width="343" height="33"/>
+                                <rect key="frame" x="16" y="399" width="343" height="33"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="18"/>
                                 <state key="normal" title="My Products">
                                     <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -170,7 +170,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ejy-AC-230">
-                                        <rect key="frame" x="60" y="19.5" width="255" height="25"/>
+                                        <rect key="frame" x="60" y="19" width="255" height="26"/>
                                         <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -217,69 +217,71 @@
                                                 </constraints>
                                             </imageView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product name:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4xo-a0-NXU">
-                                                <rect key="frame" x="12" y="181" width="127.5" height="19"/>
+                                                <rect key="frame" x="12" y="181" width="112" height="20"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QpR-ol-AeL">
-                                                <rect key="frame" x="161.5" y="175.5" width="201.5" height="30"/>
+                                                <rect key="frame" x="146" y="176" width="217" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product no:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AXT-Vg-kDp">
-                                                <rect key="frame" x="12" y="219.5" width="101" height="19"/>
+                                                <rect key="frame" x="12" y="219.5" width="89" height="20"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3AN-co-G7x">
-                                                <rect key="frame" x="162" y="214" width="201" height="30"/>
+                                                <rect key="frame" x="146.5" y="214.5" width="216.5" height="30"/>
                                                 <nil key="textColor"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="njq-AF-Z14">
-                                                <rect key="frame" x="12" y="260" width="351" height="19"/>
+                                                <rect key="frame" x="12" y="260.5" width="351" height="20"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="xr3-Gh-TK1">
-                                                <rect key="frame" x="12" y="282" width="351" height="65"/>
+                                                <rect key="frame" x="12" y="283.5" width="351" height="65"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="afj-G5-ePS"/>
                                                 </constraints>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item details" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0PY-jQ-FGi">
-                                                <rect key="frame" x="12" y="363" width="351" height="19"/>
+                                                <rect key="frame" x="12" y="364.5" width="351" height="20"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="i6E-vQ-bE8">
-                                                <rect key="frame" x="12" y="385" width="351" height="65"/>
+                                                <rect key="frame" x="12" y="387.5" width="351" height="65"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="65" id="G9L-g7-F7m"/>
                                                 </constraints>
                                                 <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                             </textView>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Price:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CuP-2C-ESN">
-                                                <rect key="frame" x="12" y="477" width="47" height="19"/>
+                                                <rect key="frame" x="12" y="479.5" width="43.5" height="20"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="83S-VC-SzQ">
-                                                <rect key="frame" x="75" y="471.5" width="60" height="30"/>
+                                                <rect key="frame" x="71.5" y="474.5" width="60" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="N9s-Oq-JuN"/>
                                                 </constraints>
@@ -288,13 +290,13 @@
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Quantity:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fV1-XK-lld">
-                                                <rect key="frame" x="205.5" y="477" width="81.5" height="19"/>
+                                                <rect key="frame" x="218" y="479.5" width="69" height="20"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
-                                                <nil key="textColor"/>
+                                                <color key="textColor" red="0.29803922770000002" green="0.29803922770000002" blue="0.29803922770000002" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="znt-w3-rTr">
-                                                <rect key="frame" x="303" y="471" width="60" height="30"/>
+                                                <rect key="frame" x="303" y="474" width="60" height="30"/>
                                                 <constraints>
                                                     <constraint firstAttribute="width" constant="60" id="mAK-CH-qsw"/>
                                                 </constraints>
@@ -303,14 +305,14 @@
                                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                                             </textField>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Un4-ah-h50" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
-                                                <rect key="frame" x="16" y="552" width="163.5" height="31"/>
+                                                <rect key="frame" x="16" y="551" width="163.5" height="32"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
                                                 <state key="normal" title="Cancel">
                                                     <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </state>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ves-bD-XJF" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
-                                                <rect key="frame" x="195.5" y="552" width="163.5" height="31"/>
+                                                <rect key="frame" x="195.5" y="551" width="163.5" height="32"/>
                                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
                                                 <state key="normal" title="Add">
                                                     <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -403,7 +405,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="My products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ste-6Q-wnY">
-                                        <rect key="frame" x="60" y="19.5" width="255" height="25"/>
+                                        <rect key="frame" x="60" y="19" width="255" height="26"/>
                                         <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -437,18 +439,40 @@
                                     <constraint firstItem="2UG-Fn-ceg" firstAttribute="leading" secondItem="A5l-la-qDM" secondAttribute="leading" constant="8" id="r9F-Ot-zk0"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="zNN-hC-vud">
+                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="ZdB-r7-dw4">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kjB-68-0EM" id="OZG-bA-lzf"/>
+                                    <outlet property="delegate" destination="kjB-68-0EM" id="hnj-Uf-hBv"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="A5l-la-qDM" firstAttribute="top" secondItem="1o3-y3-fjy" secondAttribute="top" id="29p-qu-xED"/>
+                            <constraint firstItem="zNN-hC-vud" firstAttribute="leading" secondItem="1o3-y3-fjy" secondAttribute="leading" id="AwE-N2-y49"/>
+                            <constraint firstItem="vNX-91-rx7" firstAttribute="top" secondItem="zNN-hC-vud" secondAttribute="bottom" id="Jvg-OH-Dsz"/>
                             <constraint firstAttribute="trailing" secondItem="A5l-la-qDM" secondAttribute="trailing" id="LmT-aC-NAL"/>
+                            <constraint firstAttribute="trailing" secondItem="zNN-hC-vud" secondAttribute="trailing" id="ffD-2N-Csv"/>
+                            <constraint firstItem="zNN-hC-vud" firstAttribute="top" secondItem="A5l-la-qDM" secondAttribute="bottom" id="ivx-Q1-yPE"/>
                             <constraint firstItem="A5l-la-qDM" firstAttribute="leading" secondItem="1o3-y3-fjy" secondAttribute="leading" id="odV-Tb-Vga"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="_collectionView" destination="zNN-hC-vud" id="gRf-GY-4J8"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="agr-YE-ZLY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="586" y="654"/>
+            <point key="canvasLocation" x="584.79999999999995" y="653.52323838080963"/>
         </scene>
         <!--Delete ProductVC-->
         <scene sceneID="of9-Bd-b7l">
@@ -466,7 +490,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delete products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1KY-TU-NEg">
-                                        <rect key="frame" x="60" y="19.5" width="255" height="25"/>
+                                        <rect key="frame" x="60" y="19" width="255" height="26"/>
                                         <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -501,21 +525,24 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ric-bM-PvD" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
-                                <rect key="frame" x="8" y="628" width="175.5" height="31"/>
+                                <rect key="frame" x="8" y="627" width="175.5" height="32"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
                                 <state key="normal" title="Cancel">
                                     <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="ITH-Ri-YBA" eventType="touchUpInside" id="Hby-FX-Upg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sdx-Ia-IeO" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
-                                <rect key="frame" x="191.5" y="628" width="175.5" height="31"/>
+                                <rect key="frame" x="191.5" y="627" width="175.5" height="32"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
                                 <state key="normal" title="Delete">
                                     <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="7kP-UJ-A7l">
-                                <rect key="frame" x="0.0" y="64" width="375" height="556"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="555"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="2BL-dB-Deo">
                                     <size key="itemSize" width="372" height="71"/>
@@ -571,7 +598,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Modify products" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ARi-Vj-2ca">
-                                        <rect key="frame" x="60" y="19.5" width="255" height="25"/>
+                                        <rect key="frame" x="60" y="19" width="255" height="26"/>
                                         <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -605,26 +632,40 @@
                                     <constraint firstItem="ARi-Vj-2ca" firstAttribute="centerY" secondItem="76K-vU-DWa" secondAttribute="centerY" id="wgI-wL-iry"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NwC-ze-rdb">
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="HvH-SY-tRK">
                                 <rect key="frame" x="0.0" y="64" width="375" height="603"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="heD-9b-Duf">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Fbk-ew-hxN" id="UEL-ws-3N3"/>
+                                    <outlet property="delegate" destination="Fbk-ew-hxN" id="Z0n-bN-fkE"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="D5B-fV-zbq" firstAttribute="top" secondItem="NwC-ze-rdb" secondAttribute="bottom" id="Ix1-p5-FZN"/>
-                            <constraint firstAttribute="trailing" secondItem="NwC-ze-rdb" secondAttribute="trailing" id="KYO-V9-pdo"/>
-                            <constraint firstItem="NwC-ze-rdb" firstAttribute="top" secondItem="76K-vU-DWa" secondAttribute="bottom" id="Nxy-es-KJ2"/>
                             <constraint firstItem="76K-vU-DWa" firstAttribute="top" secondItem="Be3-rh-gZv" secondAttribute="top" id="R9d-R0-tN2"/>
+                            <constraint firstItem="D5B-fV-zbq" firstAttribute="top" secondItem="HvH-SY-tRK" secondAttribute="bottom" id="SYn-QH-PdB"/>
+                            <constraint firstAttribute="trailing" secondItem="HvH-SY-tRK" secondAttribute="trailing" id="Wdq-nX-ftH"/>
                             <constraint firstAttribute="trailing" secondItem="76K-vU-DWa" secondAttribute="trailing" id="ZwM-py-Ogn"/>
-                            <constraint firstItem="NwC-ze-rdb" firstAttribute="leading" secondItem="Be3-rh-gZv" secondAttribute="leading" id="bdJ-ly-hld"/>
+                            <constraint firstItem="HvH-SY-tRK" firstAttribute="leading" secondItem="Be3-rh-gZv" secondAttribute="leading" id="c9g-V5-EEW"/>
+                            <constraint firstItem="HvH-SY-tRK" firstAttribute="top" secondItem="76K-vU-DWa" secondAttribute="bottom" id="fyW-lt-Iet"/>
                             <constraint firstItem="76K-vU-DWa" firstAttribute="leading" secondItem="Be3-rh-gZv" secondAttribute="leading" id="gtd-DG-SHy"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="_collectionView" destination="HvH-SY-tRK" id="hcb-sD-cN7"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tfG-zD-dL0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-103" y="1358"/>
+            <point key="canvasLocation" x="-103.2" y="1357.8710644677662"/>
         </scene>
         <!--Out Of StockVC-->
         <scene sceneID="XWW-jc-JlW">
@@ -642,7 +683,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="64"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Out of stock" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WF3-s8-ruM">
-                                        <rect key="frame" x="60" y="19.5" width="255" height="25"/>
+                                        <rect key="frame" x="60" y="19" width="255" height="26"/>
                                         <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="22"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
@@ -676,18 +717,14 @@
                                     <constraint firstItem="WF3-s8-ruM" firstAttribute="centerY" secondItem="bhp-dH-jOH" secondAttribute="centerY" id="zoM-K2-fd8"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="chS-pd-Slb">
-                                <rect key="frame" x="0.0" y="64" width="375" height="568"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                            </tableView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total products:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" adjustsFontForContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="d2n-WZ-jBX">
-                                <rect key="frame" x="8" y="640" width="132" height="19"/>
+                                <rect key="frame" x="8" y="639" width="113.5" height="20"/>
                                 <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Zwk-Vd-TfS">
-                                <rect key="frame" x="142" y="640" width="75" height="19"/>
+                                <rect key="frame" x="123.5" y="639" width="75" height="20"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="75" id="jsi-to-aTF"/>
                                 </constraints>
@@ -695,22 +732,40 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="wTk-le-Byw">
+                                <rect key="frame" x="0.0" y="64" width="375" height="567"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FVI-dx-VuE">
+                                    <size key="itemSize" width="50" height="50"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="kK6-Ag-KDg" id="a7v-i4-1oF"/>
+                                    <outlet property="delegate" destination="kK6-Ag-KDg" id="ane-2G-LBw"/>
+                                </connections>
+                            </collectionView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="chS-pd-Slb" firstAttribute="leading" secondItem="nFV-PK-Gpy" secondAttribute="leading" id="8Im-LL-eYp"/>
                             <constraint firstAttribute="trailing" secondItem="bhp-dH-jOH" secondAttribute="trailing" id="D4h-ib-xIp"/>
-                            <constraint firstItem="d2n-WZ-jBX" firstAttribute="top" secondItem="chS-pd-Slb" secondAttribute="bottom" constant="8" id="Jfg-FO-Q0l"/>
                             <constraint firstItem="awM-Zw-lOL" firstAttribute="top" secondItem="d2n-WZ-jBX" secondAttribute="bottom" constant="8" id="L2B-Ti-Uas"/>
-                            <constraint firstItem="chS-pd-Slb" firstAttribute="top" secondItem="bhp-dH-jOH" secondAttribute="bottom" id="SnA-bS-yCV"/>
                             <constraint firstItem="Zwk-Vd-TfS" firstAttribute="leading" secondItem="d2n-WZ-jBX" secondAttribute="trailing" constant="2" id="Yif-AT-LTq"/>
                             <constraint firstItem="bhp-dH-jOH" firstAttribute="top" secondItem="nFV-PK-Gpy" secondAttribute="top" id="bGF-Cl-ruo"/>
                             <constraint firstItem="d2n-WZ-jBX" firstAttribute="leading" secondItem="nFV-PK-Gpy" secondAttribute="leading" constant="8" id="bQy-TY-o2V"/>
                             <constraint firstItem="bhp-dH-jOH" firstAttribute="leading" secondItem="nFV-PK-Gpy" secondAttribute="leading" id="dHH-DD-Kag"/>
-                            <constraint firstAttribute="trailing" secondItem="chS-pd-Slb" secondAttribute="trailing" id="guT-cp-3fO"/>
                             <constraint firstItem="awM-Zw-lOL" firstAttribute="top" secondItem="Zwk-Vd-TfS" secondAttribute="bottom" constant="8" id="p7a-3F-lzR"/>
+                            <constraint firstItem="wTk-le-Byw" firstAttribute="top" secondItem="bhp-dH-jOH" secondAttribute="bottom" id="pQ7-zd-DHB"/>
+                            <constraint firstItem="d2n-WZ-jBX" firstAttribute="top" secondItem="wTk-le-Byw" secondAttribute="bottom" constant="8" id="rYf-ox-eXD"/>
+                            <constraint firstAttribute="trailing" secondItem="wTk-le-Byw" secondAttribute="trailing" id="uwu-cB-HJ9"/>
+                            <constraint firstItem="wTk-le-Byw" firstAttribute="leading" secondItem="nFV-PK-Gpy" secondAttribute="leading" id="z9b-3s-oNp"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="_collectionView" destination="wTk-le-Byw" id="JM6-yq-QaZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C2D-0W-P7D" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

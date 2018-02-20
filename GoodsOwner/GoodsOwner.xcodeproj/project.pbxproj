@@ -14,6 +14,8 @@
 		0D04100E2009AF5200F36EC3 /* GOSplashVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D04100D2009AF5200F36EC3 /* GOSplashVC.swift */; };
 		0D0748042036F0730023EA9D /* GOWebPageVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0748032036F0730023EA9D /* GOWebPageVC.swift */; };
 		0D0748062036F7CB0023EA9D /* GORegistrationIntermediateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0748052036F7CA0023EA9D /* GORegistrationIntermediateVC.swift */; };
+		0D1AA20A203C132B0073ADCA /* GOProfileGeneralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AA208203C13290073ADCA /* GOProfileGeneralVC.swift */; };
+		0D1AA20B203C132B0073ADCA /* GOProfileReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AA209203C13290073ADCA /* GOProfileReviewVC.swift */; };
 		0D4769F2203448E300F27966 /* GOOrderDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4769F0203448E300F27966 /* GOOrderDetailsCell.swift */; };
 		0D4769F3203448E300F27966 /* GOOrderDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4769F1203448E300F27966 /* GOOrderDetailsCell.xib */; };
 		0D4769F62034493000F27966 /* GOOrderDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4769F42034493000F27966 /* GOOrderDetailsHeader.swift */; };
@@ -61,6 +63,8 @@
 		0D04100D2009AF5200F36EC3 /* GOSplashVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOSplashVC.swift; sourceTree = "<group>"; };
 		0D0748032036F0730023EA9D /* GOWebPageVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOWebPageVC.swift; sourceTree = "<group>"; };
 		0D0748052036F7CA0023EA9D /* GORegistrationIntermediateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GORegistrationIntermediateVC.swift; sourceTree = "<group>"; };
+		0D1AA208203C13290073ADCA /* GOProfileGeneralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProfileGeneralVC.swift; sourceTree = "<group>"; };
+		0D1AA209203C13290073ADCA /* GOProfileReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProfileReviewVC.swift; sourceTree = "<group>"; };
 		0D46A282D6ADD4E31C028851 /* Pods-GoodsOwner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodsOwner.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodsOwner/Pods-GoodsOwner.release.xcconfig"; sourceTree = "<group>"; };
 		0D4769F0203448E300F27966 /* GOOrderDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOOrderDetailsCell.swift; sourceTree = "<group>"; };
 		0D4769F1203448E300F27966 /* GOOrderDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOOrderDetailsCell.xib; sourceTree = "<group>"; };
@@ -258,6 +262,8 @@
 		0D04100C2009AF1300F36EC3 /* NavDrawer */ = {
 			isa = PBXGroup;
 			children = (
+				0D1AA208203C13290073ADCA /* GOProfileGeneralVC.swift */,
+				0D1AA209203C13290073ADCA /* GOProfileReviewVC.swift */,
 				0D843AFB202FF94700AB0FA8 /* GONavDrawerVC.swift */,
 				0D843AFD2030136500AB0FA8 /* GOProductsVC.swift */,
 				0D843AFF2030138A00AB0FA8 /* GOProfileVC.swift */,
@@ -494,6 +500,7 @@
 				0D4769F62034493000F27966 /* GOOrderDetailsHeader.swift in Sources */,
 				0D843B022030139F00AB0FA8 /* GOSettingsVC.swift in Sources */,
 				0D843B0C2031656F00AB0FA8 /* GOOrderDetailsVC.swift in Sources */,
+				0D1AA20B203C132B0073ADCA /* GOProfileReviewVC.swift in Sources */,
 				0D8ADEEF20330EA900764884 /* GORegistrationCell.swift in Sources */,
 				0D843AF6202F608B00AB0FA8 /* GOOrderHistoryVC.swift in Sources */,
 				0D4769F2203448E300F27966 /* GOOrderDetailsCell.swift in Sources */,
@@ -517,6 +524,7 @@
 				0D843AFE2030136500AB0FA8 /* GOProductsVC.swift in Sources */,
 				0DC99B7C203AE43D00C8F46F /* GOProductCell.swift in Sources */,
 				0D8ADEE9203301EB00764884 /* GOButton.swift in Sources */,
+				0D1AA20A203C132B0073ADCA /* GOProfileGeneralVC.swift in Sources */,
 				0DCE364A202D553A0081D962 /* GOTabBarController.swift in Sources */,
 				0D0748042036F0730023EA9D /* GOWebPageVC.swift in Sources */,
 				0D0410002009AE0D00F36EC3 /* GOBaseVC.swift in Sources */,
