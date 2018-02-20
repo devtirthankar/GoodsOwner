@@ -15,6 +15,9 @@ class GOProductCell: UICollectionViewCell {
     @IBOutlet weak var modifyView: UIView!
     
     @IBOutlet weak var checkBoxImage: UIImageView!
+    @IBOutlet weak var column1Text: UILabel!
+    @IBOutlet weak var column2Text: UILabel!
+    @IBOutlet weak var column3Text: UILabel!
     
     var isCheckBoxPressed : Bool = false
 

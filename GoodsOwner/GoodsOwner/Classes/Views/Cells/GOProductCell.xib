@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -87,7 +87,7 @@
                                     <constraint firstAttribute="width" constant="30" id="z0y-eg-vjH"/>
                                 </constraints>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7u-Bb-jMe" customClass="GOButton" customModule="GoodsOwner" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7u-Bb-jMe">
                                 <rect key="frame" x="58" y="10" width="30" height="30"/>
                                 <state key="normal">
                                     <color key="titleColor" red="0.16078431369999999" green="0.74509803919999995" blue="0.53333333329999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -135,6 +135,9 @@
             <size key="customSize" width="272" height="39"/>
             <connections>
                 <outlet property="checkBoxImage" destination="pv8-nP-7uZ" id="6Ka-fq-8FG"/>
+                <outlet property="column1Text" destination="Yds-sh-9fv" id="aeR-43-OSe"/>
+                <outlet property="column2Text" destination="D3o-uN-iH6" id="XLo-AL-cIM"/>
+                <outlet property="column3Text" destination="waQ-b4-lfx" id="lfY-8F-6fU"/>
                 <outlet property="deleteView" destination="iMq-c1-xcS" id="CJK-xt-sEp"/>
                 <outlet property="modifyView" destination="KsS-3h-bZ0" id="Bqz-HU-TVa"/>
                 <outlet property="productsView" destination="y6v-Yu-uab" id="KLD-CM-wkM"/>
