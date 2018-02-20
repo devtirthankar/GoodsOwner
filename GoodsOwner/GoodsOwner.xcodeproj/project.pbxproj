@@ -16,6 +16,8 @@
 		0D0748062036F7CB0023EA9D /* GORegistrationIntermediateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D0748052036F7CA0023EA9D /* GORegistrationIntermediateVC.swift */; };
 		0D1AA20A203C132B0073ADCA /* GOProfileGeneralVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AA208203C13290073ADCA /* GOProfileGeneralVC.swift */; };
 		0D1AA20B203C132B0073ADCA /* GOProfileReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AA209203C13290073ADCA /* GOProfileReviewVC.swift */; };
+		0D1AA20E203C2E260073ADCA /* GOProfileReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AA20C203C2E260073ADCA /* GOProfileReviewCell.swift */; };
+		0D1AA20F203C2E260073ADCA /* GOProfileReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1AA20D203C2E260073ADCA /* GOProfileReviewCell.xib */; };
 		0D4769F2203448E300F27966 /* GOOrderDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4769F0203448E300F27966 /* GOOrderDetailsCell.swift */; };
 		0D4769F3203448E300F27966 /* GOOrderDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4769F1203448E300F27966 /* GOOrderDetailsCell.xib */; };
 		0D4769F62034493000F27966 /* GOOrderDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4769F42034493000F27966 /* GOOrderDetailsHeader.swift */; };
@@ -65,6 +67,8 @@
 		0D0748052036F7CA0023EA9D /* GORegistrationIntermediateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GORegistrationIntermediateVC.swift; sourceTree = "<group>"; };
 		0D1AA208203C13290073ADCA /* GOProfileGeneralVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProfileGeneralVC.swift; sourceTree = "<group>"; };
 		0D1AA209203C13290073ADCA /* GOProfileReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProfileReviewVC.swift; sourceTree = "<group>"; };
+		0D1AA20C203C2E260073ADCA /* GOProfileReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProfileReviewCell.swift; sourceTree = "<group>"; };
+		0D1AA20D203C2E260073ADCA /* GOProfileReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOProfileReviewCell.xib; sourceTree = "<group>"; };
 		0D46A282D6ADD4E31C028851 /* Pods-GoodsOwner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodsOwner.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodsOwner/Pods-GoodsOwner.release.xcconfig"; sourceTree = "<group>"; };
 		0D4769F0203448E300F27966 /* GOOrderDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOOrderDetailsCell.swift; sourceTree = "<group>"; };
 		0D4769F1203448E300F27966 /* GOOrderDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOOrderDetailsCell.xib; sourceTree = "<group>"; };
@@ -309,6 +313,8 @@
 				0DC57A27203ADA4E00A760D0 /* GOProductHeader.xib */,
 				0DC99B7A203AE43D00C8F46F /* GOProductCell.swift */,
 				0DC99B7B203AE43D00C8F46F /* GOProductCell.xib */,
+				0D1AA20C203C2E260073ADCA /* GOProfileReviewCell.swift */,
+				0D1AA20D203C2E260073ADCA /* GOProfileReviewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -426,6 +432,7 @@
 				0DCE3646202CA41A0081D962 /* Login.storyboard in Resources */,
 				0DC57A29203ADA5000A760D0 /* GOProductHeader.xib in Resources */,
 				0DCE3645202CA41A0081D962 /* Main.storyboard in Resources */,
+				0D1AA20F203C2E260073ADCA /* GOProfileReviewCell.xib in Resources */,
 				0D4769F72034493000F27966 /* GOOrderDetailsHeader.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -517,6 +524,7 @@
 				0D0410092009AE8F00F36EC3 /* GOColor.swift in Sources */,
 				0D8ADEF22033F04A00764884 /* GORegistrationHeader.swift in Sources */,
 				0D843B0F203176D700AB0FA8 /* GOAddProductVC.swift in Sources */,
+				0D1AA20E203C2E260073ADCA /* GOProfileReviewCell.swift in Sources */,
 				0D843B11203176FE00AB0FA8 /* GODeleteProductVC.swift in Sources */,
 				0D843AFA202F60DA00AB0FA8 /* GOOrderRateVC.swift in Sources */,
 				0D843B132031773300AB0FA8 /* GOModifyProductVC.swift in Sources */,

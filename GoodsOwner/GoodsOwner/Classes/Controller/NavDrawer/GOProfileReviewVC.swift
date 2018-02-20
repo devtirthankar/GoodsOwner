@@ -8,7 +8,9 @@
 
 import UIKit
 
-class GOProfileReviewVC: UIViewController {
+class GOProfileReviewVC: GOBaseVC {
+    
+    let cellStoreIdentifier = "GDStoreReviewCell"
 
     override func viewDidLoad() {
         super.viewDidLoad()

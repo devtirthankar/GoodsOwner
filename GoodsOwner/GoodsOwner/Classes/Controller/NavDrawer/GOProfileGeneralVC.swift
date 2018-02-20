@@ -8,7 +8,7 @@
 
 import UIKit
 
-class GOProfileGeneralVC: UIViewController {
+class GOProfileGeneralVC: GOBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()

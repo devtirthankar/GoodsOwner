@@ -30,6 +30,11 @@ class GOProfileVC: GOBaseVC {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
         setupView()
     }
 
@@ -78,7 +83,7 @@ class GOProfileVC: GOBaseVC {
         // Add Child View as Subview and Configure Child View
         view.addSubview(viewController.view)
         viewController.view.frame = containerView.frame
-        viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        //viewController.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
         
         // Notify Child View Controller
         viewController.didMove(toParentViewController: self)
