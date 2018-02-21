@@ -22,6 +22,8 @@
 		0D4769F3203448E300F27966 /* GOOrderDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4769F1203448E300F27966 /* GOOrderDetailsCell.xib */; };
 		0D4769F62034493000F27966 /* GOOrderDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4769F42034493000F27966 /* GOOrderDetailsHeader.swift */; };
 		0D4769F72034493000F27966 /* GOOrderDetailsHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4769F52034493000F27966 /* GOOrderDetailsHeader.xib */; };
+		0D808B7F203D4E9C00DB887F /* GODropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D808B7E203D4E9C00DB887F /* GODropDownView.xib */; };
+		0D808B81203D4EC400DB887F /* GODropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D808B80203D4EC400DB887F /* GODropDownView.swift */; };
 		0D843AF6202F608B00AB0FA8 /* GOOrderHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D843AF5202F608B00AB0FA8 /* GOOrderHistoryVC.swift */; };
 		0D843AF8202F60BB00AB0FA8 /* GOOrderReceivedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D843AF7202F60BB00AB0FA8 /* GOOrderReceivedVC.swift */; };
 		0D843AFA202F60DA00AB0FA8 /* GOOrderRateVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D843AF9202F60DA00AB0FA8 /* GOOrderRateVC.swift */; };
@@ -74,6 +76,8 @@
 		0D4769F1203448E300F27966 /* GOOrderDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOOrderDetailsCell.xib; sourceTree = "<group>"; };
 		0D4769F42034493000F27966 /* GOOrderDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOOrderDetailsHeader.swift; sourceTree = "<group>"; };
 		0D4769F52034493000F27966 /* GOOrderDetailsHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOOrderDetailsHeader.xib; sourceTree = "<group>"; };
+		0D808B7E203D4E9C00DB887F /* GODropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GODropDownView.xib; sourceTree = "<group>"; };
+		0D808B80203D4EC400DB887F /* GODropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GODropDownView.swift; sourceTree = "<group>"; };
 		0D843AF5202F608B00AB0FA8 /* GOOrderHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOOrderHistoryVC.swift; sourceTree = "<group>"; };
 		0D843AF7202F60BB00AB0FA8 /* GOOrderReceivedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOOrderReceivedVC.swift; sourceTree = "<group>"; };
 		0D843AF9202F60DA00AB0FA8 /* GOOrderRateVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOOrderRateVC.swift; sourceTree = "<group>"; };
@@ -209,6 +213,7 @@
 		0D040FFA200944FA00F36EC3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				0D808B7D203D4E1100DB887F /* PickerViews */,
 				0D8ADEEA20330D9400764884 /* Cells */,
 			);
 			path = Views;
@@ -274,6 +279,15 @@
 				0D843B012030139F00AB0FA8 /* GOSettingsVC.swift */,
 			);
 			path = NavDrawer;
+			sourceTree = "<group>";
+		};
+		0D808B7D203D4E1100DB887F /* PickerViews */ = {
+			isa = PBXGroup;
+			children = (
+				0D808B7E203D4E9C00DB887F /* GODropDownView.xib */,
+				0D808B80203D4EC400DB887F /* GODropDownView.swift */,
+			);
+			path = PickerViews;
 			sourceTree = "<group>";
 		};
 		0D843B0320304C9E00AB0FA8 /* Fonts */ = {
@@ -432,6 +446,7 @@
 				0DCE3646202CA41A0081D962 /* Login.storyboard in Resources */,
 				0DC57A29203ADA5000A760D0 /* GOProductHeader.xib in Resources */,
 				0DCE3645202CA41A0081D962 /* Main.storyboard in Resources */,
+				0D808B7F203D4E9C00DB887F /* GODropDownView.xib in Resources */,
 				0D1AA20F203C2E260073ADCA /* GOProfileReviewCell.xib in Resources */,
 				0D4769F72034493000F27966 /* GOOrderDetailsHeader.xib in Resources */,
 			);
@@ -512,6 +527,7 @@
 				0D843AF6202F608B00AB0FA8 /* GOOrderHistoryVC.swift in Sources */,
 				0D4769F2203448E300F27966 /* GOOrderDetailsCell.swift in Sources */,
 				0D843AF8202F60BB00AB0FA8 /* GOOrderReceivedVC.swift in Sources */,
+				0D808B81203D4EC400DB887F /* GODropDownView.swift in Sources */,
 				0D843B172031777800AB0FA8 /* GOMyProductVC.swift in Sources */,
 				0D040FFE2009458200F36EC3 /* AppDelegate.swift in Sources */,
 				0D843B002030138A00AB0FA8 /* GOProfileVC.swift in Sources */,
