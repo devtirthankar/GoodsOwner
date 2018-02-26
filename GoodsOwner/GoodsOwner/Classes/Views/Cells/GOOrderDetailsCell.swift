@@ -9,6 +9,8 @@
 import UIKit
 
 class GOOrderDetailsCell: UICollectionViewCell {
+    
+    @IBOutlet weak var _serialNo: UILabel!
 
     override func awakeFromNib() {
         super.awakeFromNib()

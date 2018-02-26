@@ -44,6 +44,8 @@ extension GOOrderDetailsVC: UICollectionViewDelegate, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
         let cell = _collectionView.dequeueReusableCell(withReuseIdentifier: _cellReuseIdentifier, for: indexPath)
+        let searialNo = indexPath.row + 1
+        
         return cell
     }
     
