@@ -18,10 +18,15 @@
 		0D1AA20B203C132B0073ADCA /* GOProfileReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AA209203C13290073ADCA /* GOProfileReviewVC.swift */; };
 		0D1AA20E203C2E260073ADCA /* GOProfileReviewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1AA20C203C2E260073ADCA /* GOProfileReviewCell.swift */; };
 		0D1AA20F203C2E260073ADCA /* GOProfileReviewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D1AA20D203C2E260073ADCA /* GOProfileReviewCell.xib */; };
+		0D1CA8D3204E9A5F006B246B /* GOAlertAndLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D1CA8D2204E9A5F006B246B /* GOAlertAndLoader.swift */; };
 		0D4769F2203448E300F27966 /* GOOrderDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4769F0203448E300F27966 /* GOOrderDetailsCell.swift */; };
 		0D4769F3203448E300F27966 /* GOOrderDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4769F1203448E300F27966 /* GOOrderDetailsCell.xib */; };
 		0D4769F62034493000F27966 /* GOOrderDetailsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D4769F42034493000F27966 /* GOOrderDetailsHeader.swift */; };
 		0D4769F72034493000F27966 /* GOOrderDetailsHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D4769F52034493000F27966 /* GOOrderDetailsHeader.xib */; };
+		0D491AC4204D24500044ECC5 /* GOSignInVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D491AC3204D24500044ECC5 /* GOSignInVM.swift */; };
+		0D5EB5BE204FD3C400A42F4B /* GOWebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5EB5BD204FD3C400A42F4B /* GOWebServiceManager.swift */; };
+		0D5EB5C1204FE15A00A42F4B /* GOWebServiceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5EB5C0204FE15A00A42F4B /* GOWebServiceRequest.swift */; };
+		0D5EB5C3205005CC00A42F4B /* GOWebServiceRequestLogin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D5EB5C2205005CC00A42F4B /* GOWebServiceRequestLogin.swift */; };
 		0D808B7F203D4E9C00DB887F /* GODropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D808B7E203D4E9C00DB887F /* GODropDownView.xib */; };
 		0D808B81203D4EC400DB887F /* GODropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D808B80203D4EC400DB887F /* GODropDownView.swift */; };
 		0D843AF6202F608B00AB0FA8 /* GOOrderHistoryVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D843AF5202F608B00AB0FA8 /* GOOrderHistoryVC.swift */; };
@@ -71,11 +76,16 @@
 		0D1AA209203C13290073ADCA /* GOProfileReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProfileReviewVC.swift; sourceTree = "<group>"; };
 		0D1AA20C203C2E260073ADCA /* GOProfileReviewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProfileReviewCell.swift; sourceTree = "<group>"; };
 		0D1AA20D203C2E260073ADCA /* GOProfileReviewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOProfileReviewCell.xib; sourceTree = "<group>"; };
+		0D1CA8D2204E9A5F006B246B /* GOAlertAndLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOAlertAndLoader.swift; sourceTree = "<group>"; };
 		0D46A282D6ADD4E31C028851 /* Pods-GoodsOwner.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoodsOwner.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoodsOwner/Pods-GoodsOwner.release.xcconfig"; sourceTree = "<group>"; };
 		0D4769F0203448E300F27966 /* GOOrderDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOOrderDetailsCell.swift; sourceTree = "<group>"; };
 		0D4769F1203448E300F27966 /* GOOrderDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOOrderDetailsCell.xib; sourceTree = "<group>"; };
 		0D4769F42034493000F27966 /* GOOrderDetailsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOOrderDetailsHeader.swift; sourceTree = "<group>"; };
 		0D4769F52034493000F27966 /* GOOrderDetailsHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOOrderDetailsHeader.xib; sourceTree = "<group>"; };
+		0D491AC3204D24500044ECC5 /* GOSignInVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOSignInVM.swift; sourceTree = "<group>"; };
+		0D5EB5BD204FD3C400A42F4B /* GOWebServiceManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOWebServiceManager.swift; sourceTree = "<group>"; };
+		0D5EB5C0204FE15A00A42F4B /* GOWebServiceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOWebServiceRequest.swift; sourceTree = "<group>"; };
+		0D5EB5C2205005CC00A42F4B /* GOWebServiceRequestLogin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOWebServiceRequestLogin.swift; sourceTree = "<group>"; };
 		0D808B7E203D4E9C00DB887F /* GODropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GODropDownView.xib; sourceTree = "<group>"; };
 		0D808B80203D4EC400DB887F /* GODropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GODropDownView.swift; sourceTree = "<group>"; };
 		0D843AF5202F608B00AB0FA8 /* GOOrderHistoryVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOOrderHistoryVC.swift; sourceTree = "<group>"; };
@@ -169,6 +179,7 @@
 		0D040FF5200944FA00F36EC3 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				0D491AC1204D240D0044ECC5 /* ViewModel */,
 				0D040FF6200944FA00F36EC3 /* Controller */,
 				0D040FF7200944FA00F36EC3 /* Main */,
 				0D040FF9200944FA00F36EC3 /* Utilities */,
@@ -241,6 +252,7 @@
 			children = (
 				0D0410052009AE8F00F36EC3 /* GOColor.swift */,
 				0D8ADEE8203301EB00764884 /* GOButton.swift */,
+				0D1CA8D2204E9A5F006B246B /* GOAlertAndLoader.swift */,
 			);
 			path = GOUtility;
 			sourceTree = "<group>";
@@ -279,6 +291,31 @@
 				0D843B012030139F00AB0FA8 /* GOSettingsVC.swift */,
 			);
 			path = NavDrawer;
+			sourceTree = "<group>";
+		};
+		0D491AC1204D240D0044ECC5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0D491AC2204D241F0044ECC5 /* Login */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		0D491AC2204D241F0044ECC5 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				0D491AC3204D24500044ECC5 /* GOSignInVM.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		0D5EB5BF204FE11700A42F4B /* Request */ = {
+			isa = PBXGroup;
+			children = (
+				0D5EB5C0204FE15A00A42F4B /* GOWebServiceRequest.swift */,
+				0D5EB5C2205005CC00A42F4B /* GOWebServiceRequestLogin.swift */,
+			);
+			path = Request;
 			sourceTree = "<group>";
 		};
 		0D808B7D203D4E1100DB887F /* PickerViews */ = {
@@ -343,6 +380,8 @@
 		0DC57A24203AC90300A760D0 /* Web */ = {
 			isa = PBXGroup;
 			children = (
+				0D5EB5BF204FE11700A42F4B /* Request */,
+				0D5EB5BD204FD3C400A42F4B /* GOWebServiceManager.swift */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -528,20 +567,24 @@
 				0D4769F2203448E300F27966 /* GOOrderDetailsCell.swift in Sources */,
 				0D843AF8202F60BB00AB0FA8 /* GOOrderReceivedVC.swift in Sources */,
 				0D808B81203D4EC400DB887F /* GODropDownView.swift in Sources */,
+				0D491AC4204D24500044ECC5 /* GOSignInVM.swift in Sources */,
 				0D843B172031777800AB0FA8 /* GOMyProductVC.swift in Sources */,
 				0D040FFE2009458200F36EC3 /* AppDelegate.swift in Sources */,
 				0D843B002030138A00AB0FA8 /* GOProfileVC.swift in Sources */,
 				0D0410072009AE8F00F36EC3 /* UIColor+Additions.swift in Sources */,
+				0D5EB5C3205005CC00A42F4B /* GOWebServiceRequestLogin.swift in Sources */,
 				0DCE364C202D60490081D962 /* GORegistrationVC.swift in Sources */,
 				0DCE3648202CA4B40081D962 /* GOSignInVC.swift in Sources */,
 				0D843AFC202FF94700AB0FA8 /* GONavDrawerVC.swift in Sources */,
 				0DC57A28203ADA4F00A760D0 /* GOProductHeader.swift in Sources */,
 				0D843B152031775A00AB0FA8 /* GOOutOfStockVC.swift in Sources */,
+				0D5EB5BE204FD3C400A42F4B /* GOWebServiceManager.swift in Sources */,
 				0D0410092009AE8F00F36EC3 /* GOColor.swift in Sources */,
 				0D8ADEF22033F04A00764884 /* GORegistrationHeader.swift in Sources */,
 				0D843B0F203176D700AB0FA8 /* GOAddProductVC.swift in Sources */,
 				0D1AA20E203C2E260073ADCA /* GOProfileReviewCell.swift in Sources */,
 				0D843B11203176FE00AB0FA8 /* GODeleteProductVC.swift in Sources */,
+				0D5EB5C1204FE15A00A42F4B /* GOWebServiceRequest.swift in Sources */,
 				0D843AFA202F60DA00AB0FA8 /* GOOrderRateVC.swift in Sources */,
 				0D843B132031773300AB0FA8 /* GOModifyProductVC.swift in Sources */,
 				0D0748062036F7CB0023EA9D /* GORegistrationIntermediateVC.swift in Sources */,
@@ -550,6 +593,7 @@
 				0D8ADEE9203301EB00764884 /* GOButton.swift in Sources */,
 				0D1AA20A203C132B0073ADCA /* GOProfileGeneralVC.swift in Sources */,
 				0DCE364A202D553A0081D962 /* GOTabBarController.swift in Sources */,
+				0D1CA8D3204E9A5F006B246B /* GOAlertAndLoader.swift in Sources */,
 				0D0748042036F0730023EA9D /* GOWebPageVC.swift in Sources */,
 				0D0410002009AE0D00F36EC3 /* GOBaseVC.swift in Sources */,
 			);

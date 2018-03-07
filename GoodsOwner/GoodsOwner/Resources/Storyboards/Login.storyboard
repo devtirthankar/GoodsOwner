@@ -124,7 +124,9 @@
                     </view>
                     <connections>
                         <outlet property="_goodsOwnerLogo" destination="cPZ-R1-I5g" id="Wdv-Qe-nf0"/>
+                        <outlet property="_passwordTextField" destination="QzO-zq-6uG" id="qnA-hy-ZRb"/>
                         <outlet property="_signInButton" destination="pd8-Co-O0h" id="slo-LH-Yv4"/>
+                        <outlet property="_usernameTextField" destination="chT-A9-cEW" id="1iQ-6G-lFy"/>
                         <outletCollection property="_themeLabel" destination="hro-9P-2aR" collectionClass="NSMutableArray" id="6h6-re-ehI"/>
                         <outletCollection property="_themeLabel" destination="4Kq-xj-zEv" collectionClass="NSMutableArray" id="RpU-XU-JoB"/>
                         <outletCollection property="_themeView" destination="pd8-Co-O0h" collectionClass="NSMutableArray" id="69S-wH-sMU"/>
