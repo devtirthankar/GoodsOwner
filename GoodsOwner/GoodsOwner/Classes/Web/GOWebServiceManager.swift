@@ -11,20 +11,20 @@ import Foundation
 typealias GOWSCompletionBlock = (_ object : Any?, _ error : Error?) -> Void
 
 enum GOWebServiceURLEndPoints{
-    static let registration = "/register"
+    static let registration = "user"
     static let login = "/login"
 }
 
 enum GOServerURL: String {
-    case development = "development"
+    case development = "https://api.smj.ltd/api/v1/"
     case test = "test"
-    case production = "production"
+    case production = "https://api.goods-dts.com/"
     case staging = "http://www.goods-dts.com/goodsapp"
 }
 
 class GOWebServiceManager: NSObject {
     var serviceArray = [GOWebServiceRequest]()
-    var baseURL = GOServerURL.staging.rawValue
+    var baseURL = GOServerURL.development.rawValue
     
     static let sharedManager : GOWebServiceManager = {
         let instance = GOWebServiceManager()

@@ -48,6 +48,7 @@
 		0D8ADEF020330EA900764884 /* GORegistrationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8ADEEE20330EA900764884 /* GORegistrationCell.xib */; };
 		0D8ADEF22033F04A00764884 /* GORegistrationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8ADEF12033F04A00764884 /* GORegistrationHeader.swift */; };
 		0D8ADEF42033F05A00764884 /* GORegistrationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8ADEF32033F05A00764884 /* GORegistrationHeader.xib */; };
+		0DA4443A20A2C2F300796BCA /* GOOTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4443920A2C2F300796BCA /* GOOTPVC.swift */; };
 		0DC57A28203ADA4F00A760D0 /* GOProductHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC57A26203ADA4D00A760D0 /* GOProductHeader.swift */; };
 		0DC57A29203ADA5000A760D0 /* GOProductHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DC57A27203ADA4E00A760D0 /* GOProductHeader.xib */; };
 		0DC99B7C203AE43D00C8F46F /* GOProductCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DC99B7A203AE43D00C8F46F /* GOProductCell.swift */; };
@@ -110,6 +111,7 @@
 		0D8ADEEE20330EA900764884 /* GORegistrationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GORegistrationCell.xib; sourceTree = "<group>"; };
 		0D8ADEF12033F04A00764884 /* GORegistrationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GORegistrationHeader.swift; sourceTree = "<group>"; };
 		0D8ADEF32033F05A00764884 /* GORegistrationHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GORegistrationHeader.xib; sourceTree = "<group>"; };
+		0DA4443920A2C2F300796BCA /* GOOTPVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOOTPVC.swift; sourceTree = "<group>"; };
 		0DC57A26203ADA4D00A760D0 /* GOProductHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProductHeader.swift; sourceTree = "<group>"; };
 		0DC57A27203ADA4E00A760D0 /* GOProductHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOProductHeader.xib; sourceTree = "<group>"; };
 		0DC99B7A203AE43D00C8F46F /* GOProductCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOProductCell.swift; sourceTree = "<group>"; };
@@ -271,6 +273,7 @@
 		0D04100B2009AF1300F36EC3 /* Login */ = {
 			isa = PBXGroup;
 			children = (
+				0DA4443920A2C2F300796BCA /* GOOTPVC.swift */,
 				0D04100D2009AF5200F36EC3 /* GOSplashVC.swift */,
 				0DCE3647202CA4B40081D962 /* GOSignInVC.swift */,
 				0DCE364B202D60490081D962 /* GORegistrationVC.swift */,
@@ -519,11 +522,15 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-GoodsOwner/Pods-GoodsOwner-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManagerSwift/IQKeyboardManagerSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManagerSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -596,6 +603,7 @@
 				0D1CA8D3204E9A5F006B246B /* GOAlertAndLoader.swift in Sources */,
 				0D0748042036F0730023EA9D /* GOWebPageVC.swift in Sources */,
 				0D0410002009AE0D00F36EC3 /* GOBaseVC.swift in Sources */,
+				0DA4443A20A2C2F300796BCA /* GOOTPVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

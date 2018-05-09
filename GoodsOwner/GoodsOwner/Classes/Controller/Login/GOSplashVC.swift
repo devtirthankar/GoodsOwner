@@ -16,10 +16,6 @@ class GOSplashVC: GOBaseVC {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         setColorForTitleViews()
-        
-        _goodsOwnerLogo.image = _goodsOwnerLogo.image!.withRenderingMode(.alwaysTemplate)
-        _goodsOwnerLogo.tintColor = UIColor.colorForHex(GOColor.ThemeColor as NSString)//init(red: 41.0/255.0, green: 190.0/255.0, blue: 136.0/255.0, alpha: 1.0)
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
             self.bringUpLoginView()
         }

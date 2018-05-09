@@ -6,24 +6,26 @@
 //  Copyright © 2018 company. All rights reserved.
 //
 
-import Foundation
+import UIKit
+import Alamofire
 
-enum HTTPMethod: String {
-    case get = "GET"
-    case post = "POST"
-    case put = "PUT"
-}
-
-class GOWebServiceRequest: NSObject{
-    var block: GOWSCompletionBlock
-    weak var manager : GOWebServiceManager?
-    var url: String?
-    var httpMethod : HTTPMethod = .get
-    var headers = [String : String]()
-    var body : [String: Any]?
-    var dataTask : URLSessionDataTask?
-    //var request : DataRequest?
+class GOWebServiceRequest: NSObject {
     
+    var block : GOWSCompletionBlock
+    
+    var url : String?
+    
+    var httpMethod : HTTPMethod = .get
+    
+    var headers : HTTPHeaders? = [String : String]()
+    
+    var body : Parameters? = Parameters()
+    
+    var request : DataRequest?
+    
+    weak var manager : GOWebServiceManager?
+    
+    let concurrentQueue = DispatchQueue(label: "userqueue", attributes: .concurrent)
     
     init(manager : GOWebServiceManager, block : @escaping GOWSCompletionBlock) {
         self.block = block
@@ -31,62 +33,76 @@ class GOWebServiceRequest: NSObject{
     }
     
     func start(){
-        guard let urlStr = url else{return}
         
-        let session = URLSession.shared
+        let configuration = URLSessionConfiguration.default
+        configuration.urlCache = nil
+        headers?["Content-Type"] = "application/json"
+        _ = Alamofire.SessionManager(configuration: configuration)
+        url = url?.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed)
+        url = url?.replacingOccurrences(of: "+", with: "%2B")
         
-        let encodedUrlStr = urlStr.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)
-        var request = URLRequest(url: URL(string: encodedUrlStr!)!)
-        request.httpMethod = httpMethod.rawValue
-        
-        if let body = body{
-            do {
-                request.httpBody = try JSONSerialization.data(withJSONObject: body, options: .prettyPrinted)
-                
-            } catch let error {
-                print(error.localizedDescription)
-            }
+        if httpMethod == HTTPMethod.post || httpMethod == HTTPMethod.put || httpMethod == HTTPMethod.delete {
+            self.request = Alamofire.request(url!, method: httpMethod, parameters: body, encoding: JSONEncoding(), headers: headers).validate(statusCode: 200...300)
+        }else{
+            self.request = Alamofire.request(url!, method: httpMethod, parameters: body, encoding: URLEncoding.httpBody, headers: headers).validate(statusCode: 200...300)
         }
         
-        for (key,value) in headers{
-            request.addValue(value, forHTTPHeaderField: key)
-        }
-        
-        
-        let task = session.dataTask(with: request as URLRequest, completionHandler: { data, response, error in
-            /*
-            guard error == nil else {
-                return
-            }*/
-            
-            guard let data = data else {
-                return
-            }
-            
-            if let httpStatus = response as? HTTPURLResponse, httpStatus.statusCode != 200 {
-                print("Request failed")
-            }else{
-                print("Request success")
-                do {
-                    if let json = try JSONSerialization.jsonObject(with: data, options: .mutableContainers) as? [String: Any] {
-                        print(json)
+        self.request?.responseJSON(queue: concurrentQueue, options: JSONSerialization.ReadingOptions.allowFragments, completionHandler: { (response : DataResponse) in
+            let attributeDict = response.result.value
+            if let responseDictionary = attributeDict as? [String: Any] {
+                if let statusDictionary = responseDictionary["status"] as? [String: Any] {
+                    if let code = statusDictionary["code"] as? Int {
+                        if code == 200 {
+                            //self.responseSuccess(data: attributeDict as? Data)
+                            self.responseSuccess(data: response.data)
+                        }else{
+                            self.responseFailed(statusDictionary: statusDictionary, responseError: response.result.error)
+                        }
                     }
-                } catch let error {
-                    print(error.localizedDescription)
                 }
             }
-
+            
         })
-        task.resume()
-        dataTask = task
+        
     }
     
     func stop(){
         
-        if let task = self.dataTask{
-            task.cancel()
+        if let request = self.request{
+            request.cancel()
             
         }
         
     }
+    
+    deinit {
+        self.url = nil
+        self.body = nil
+        self.request = nil
+        self.headers = nil
+        print("\(self) deinit")
+    }
+    
+}
+
+extension GOWebServiceRequest{
+    
+    func responseSuccess(data : Data?){
+        GOWebServiceManager.sharedManager.closeService(service: self)
+        DispatchQueue.main.async {
+            self.block(data,nil)
+        }
+    }
+    
+    func responseFailed(statusDictionary : [String: Any], responseError : Error?) {
+        var message = "Could not fetch data"
+        if let msg = statusDictionary["description"] as? String {
+            message = msg
+        }
+        let error = NSError(domain: "", code: 400, userInfo: ["message" : message])
+        DispatchQueue.main.async {
+            self.block(nil,error)
+        }
+    }
+    
 }

@@ -27,8 +27,6 @@ class GOSignInVC: GOBaseVC,GOSignInVMDelegate {
     
     func initializeUI() {
         _signInButton.layer.cornerRadius = _signInButton.frame.height * 0.5
-        _goodsOwnerLogo.image = _goodsOwnerLogo.image!.withRenderingMode(.alwaysTemplate)
-        _goodsOwnerLogo.tintColor = UIColor.colorForHex(GOColor.ThemeColor as NSString)
     }
     
     @IBAction func signInPressed(_ sender: UIButton) {

@@ -13,4 +13,8 @@ pod 'GoogleMaps'
 
 pod 'GooglePlaces'
 
+pod 'Alamofire'
+
+pod 'Kingfisher'
+
 end

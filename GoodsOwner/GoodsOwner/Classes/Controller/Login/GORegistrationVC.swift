@@ -8,16 +8,20 @@
 
 import UIKit
 
-
-
 class GORegistrationVC: GOBaseVC, GODropDownViewDelegate {
-    
+    @IBOutlet weak var _registrationBtton: UIButton!
+    @IBOutlet weak var _name: UITextField!
+    @IBOutlet weak var _email: UITextField!
+    @IBOutlet weak var _password: UITextField!
+    @IBOutlet weak var _confirmPassword: UITextField!
+    @IBOutlet weak var _phone: UITextField!
+    @IBOutlet weak var _countryCode: UITextField!
     var _categoryView : GODropDownView!
     var _transparentView : UIView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        setColorForTitleViews()
         // Do any additional setup after loading the view.
 
     }
@@ -26,7 +30,7 @@ class GORegistrationVC: GOBaseVC, GODropDownViewDelegate {
         _ = self.navigationController?.popViewController(animated: true)
     }
     
-    @IBAction func nextButtonPressed(_ sender: UIButton) {
+    @IBAction func signUpButtonPressed(_ sender: UIButton) {
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "GORegistrationIntermediateVC")
         self.navigationController?.pushViewController(controller!, animated: true)
     }
@@ -46,7 +50,7 @@ class GORegistrationVC: GOBaseVC, GODropDownViewDelegate {
         _categoryView.bounds.size.width = self.view.bounds.size.width
         _categoryView.bounds.size.height = 287
         _categoryView.frame.origin = CGPoint.init(x: 0, y: self.view.bounds.size.height - 287)
-        _categoryView.pickerDataSource = ["Category 1", "Category 2", "Category 3",   "Category 4", "Category 5"]
+        _categoryView.pickerDataSource = ["SA +966"]
         
         self.view.addSubview(_categoryView)
     }
