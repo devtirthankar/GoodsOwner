@@ -12,7 +12,11 @@ typealias GOWSCompletionBlock = (_ object : Any?, _ error : Error?) -> Void
 
 enum GOWebServiceURLEndPoints{
     static let registration = "user"
-    static let login = "/login"
+    static let login = "login"
+    static let orderlist = "orders"
+    static let countrylist = "countries"
+    static let citylist = "cities"
+    static let storecategorylist = "storecategories"
 }
 
 enum GOServerURL: String {
@@ -56,11 +60,28 @@ class GOWebServiceManager: NSObject {
 
 extension GOWebServiceManager{
     
-    func loginUser(username: String, password: String, block : @escaping GOWSCompletionBlock) {
-        
-        let service = GORequestLogin.init(manager: self, username: username, password: password, block: block)
+    func loginUser(mobile: String, password: String, block : @escaping GOWSCompletionBlock) {
+        let service = GOLoginRequest.init(manager: self, mobile: mobile, password: password, block: block)
         self.startRequest(service: service)
- 
     }
     
+    func getOrderList(block : @escaping GOWSCompletionBlock) {
+        let service = GOWebServiceOrderListRequest.init(manager: self, block: block)
+        self.startRequest(service: service)
+    }
+    
+    func getCountryList(block : @escaping GOWSCompletionBlock) {
+        let service = GOWSCountryListRequest(manager: self, block: block)
+        self.startRequest(service: service)
+    }
+    
+    func getCityList(country: String, block : @escaping GOWSCompletionBlock) {
+        let service = GOWSCityListRequest(manager: self, country: country, block: block)
+        self.startRequest(service: service)
+    }
+    
+    func getStoreCategoryList(block : @escaping GOWSCompletionBlock) {
+        let service = GOWSStoreCategoryListRequest(manager: self, block: block)
+        self.startRequest(service: service)
+    }
 }

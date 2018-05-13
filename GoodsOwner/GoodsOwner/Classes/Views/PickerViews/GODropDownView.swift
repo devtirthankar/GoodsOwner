@@ -9,7 +9,7 @@
 import UIKit
 
 protocol GODropDownViewDelegate {
-    func donePressed()
+    func donePressed(selectedValue: String, pickerHeader: String)
 }
 
 class GODropDownView: UIView {
@@ -18,7 +18,7 @@ class GODropDownView: UIView {
     @IBOutlet weak var _pickerView: UIPickerView!
     
     var delegate: GODropDownViewDelegate?
-    var selectedPickerValue: String?
+    var selectedPickerValue: String? = ""
     
     var pickerDataSource = [String]()
     
@@ -26,8 +26,11 @@ class GODropDownView: UIView {
         super.awakeFromNib()
     }
     
-    @IBAction func doneButtonPressed(_ sender: UIButton) { 
-        delegate?.donePressed()
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        if selectedPickerValue?.count == 0 {
+            selectedPickerValue = pickerDataSource[0]
+        }
+        delegate?.donePressed(selectedValue: selectedPickerValue!, pickerHeader: _headerTitle.text!)
     }
 
 }

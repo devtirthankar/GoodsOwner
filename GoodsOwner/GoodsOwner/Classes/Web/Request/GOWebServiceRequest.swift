@@ -87,7 +87,7 @@ class GOWebServiceRequest: NSObject {
 
 extension GOWebServiceRequest{
     
-    func responseSuccess(data : Data?){
+    @objc func responseSuccess(data : Data?){
         GOWebServiceManager.sharedManager.closeService(service: self)
         DispatchQueue.main.async {
             self.block(data,nil)

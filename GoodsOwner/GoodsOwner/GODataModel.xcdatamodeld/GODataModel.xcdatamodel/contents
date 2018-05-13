@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="13772" systemVersion="17C88" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="GOLogin" representedClassName="GOLogin" syncable="YES">
+        <attribute name="token" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="uuid" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="user" optional="YES" maxCount="1" deletionRule="Cascade" destinationEntity="GOUserProfile" inverseName="login" inverseEntity="GOUserProfile" syncable="YES"/>
+    </entity>
+    <entity name="GOUserProfile" representedClassName="GOUserProfile" syncable="YES">
+        <attribute name="countrycode" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="mobile" optional="YES" attributeType="Integer 32" defaultValueString="0" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="login" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="GOLogin" inverseName="user" inverseEntity="GOLogin" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="GOLogin" positionX="-63" positionY="-18" width="128" height="90"/>
+        <element name="GOUserProfile" positionX="-54" positionY="9" width="128" height="105"/>
+    </elements>
+</model>

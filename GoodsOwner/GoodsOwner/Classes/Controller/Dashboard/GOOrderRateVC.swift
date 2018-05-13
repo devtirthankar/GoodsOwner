@@ -27,7 +27,7 @@ class GOOrderRateVC: GOBaseVC {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
-        
+        setColorForTitleViews()
         for greenStar in greenStars{
             
             //let view = greenStar as! UIImageView

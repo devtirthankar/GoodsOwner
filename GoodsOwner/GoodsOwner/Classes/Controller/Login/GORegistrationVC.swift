@@ -31,7 +31,7 @@ class GORegistrationVC: GOBaseVC, GODropDownViewDelegate {
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "GORegistrationIntermediateVC")
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "GOStoreRegistrationVC")
         self.navigationController?.pushViewController(controller!, animated: true)
     }
     
@@ -50,6 +50,7 @@ class GORegistrationVC: GOBaseVC, GODropDownViewDelegate {
         _categoryView.bounds.size.width = self.view.bounds.size.width
         _categoryView.bounds.size.height = 287
         _categoryView.frame.origin = CGPoint.init(x: 0, y: self.view.bounds.size.height - 287)
+        _categoryView._headerTitle.text = GOMessage.selectCountry
         _categoryView.pickerDataSource = ["SA +966"]
         
         self.view.addSubview(_categoryView)
@@ -61,7 +62,7 @@ class GORegistrationVC: GOBaseVC, GODropDownViewDelegate {
     }
     
     //MARK: GODropDownViewDelegate
-    func donePressed() {
+    func donePressed(selectedValue: String, pickerHeader: String) {
         
         if _transparentView != nil {
             _transparentView.removeFromSuperview()

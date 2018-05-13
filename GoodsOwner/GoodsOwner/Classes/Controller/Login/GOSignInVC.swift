@@ -9,12 +9,11 @@
 import Foundation
 import UIKit
 
-class GOSignInVC: GOBaseVC,GOSignInVMDelegate {
+class GOSignInVC: GOBaseVC, GOSignInVMDelegate {
     
     @IBOutlet weak var _signInButton: UIButton!
-    @IBOutlet weak var _goodsOwnerLogo: UIImageView!
-    @IBOutlet weak var _usernameTextField: UITextField!
-    @IBOutlet weak var _passwordTextField: UITextField!
+    @IBOutlet weak var _mobile: UITextField!
+    @IBOutlet weak var _password: UITextField!
     var signInViewModel: GOSignInVM = GOSignInVM()
     
     override func viewDidLoad() {
@@ -23,6 +22,9 @@ class GOSignInVC: GOBaseVC,GOSignInVMDelegate {
         setColorForTitleViews()
         setColorForLabels()
         initializeUI()
+        
+        _mobile.text = "123456789"
+        _password.text = "test1234"
     }
     
     func initializeUI() {
@@ -30,8 +32,10 @@ class GOSignInVC: GOBaseVC,GOSignInVMDelegate {
     }
     
     @IBAction func signInPressed(_ sender: UIButton) {
-        signInViewModel.username = _usernameTextField.text
-        signInViewModel.password = _passwordTextField.text
+        didSignIn()
+        return
+        signInViewModel.mobile = _mobile.text
+        signInViewModel.password = _password.text
         signInViewModel.onSignInPressed()
     }
     
@@ -41,17 +45,8 @@ class GOSignInVC: GOBaseVC,GOSignInVMDelegate {
     }
     
     //MARK: GOSignInVMDelegate
-    func showAlertForErrorType(_ type: GOSignInErrorType){
-        switch type {
-        case .invalidUsername:
-            _usernameTextField.becomeFirstResponder()
-            GOAlertAndLoader.showAlertMessage(type.rawValue)
-        case .invalidPassword:
-            _passwordTextField.becomeFirstResponder()
-            GOAlertAndLoader.showAlertMessage(type.rawValue)
-        default:
-            print(type.rawValue)
-        }
+    func invalidInputDetected(_ message: String) {
+        GOAlertAndLoader.showAlertMessage(message)
     }
     
     func didSignIn(){

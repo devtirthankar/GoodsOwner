@@ -12,26 +12,49 @@ class GOOrderReceivedVC: GOBaseVC {
     
     let _cellReuseIdentifier = "GOOrderReceivedTableCell"
     @IBOutlet weak var _tableView: UITableView!
+    var orderList = [Order]()
+    lazy var _refreshControl: UIRefreshControl = {
+        let refreshControl = UIRefreshControl()
+        return refreshControl
+    }()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        setColorForTitleViews()
         _tableView.dataSource = self
         _tableView.delegate = self
-        _tableView.reloadData()
+        fetchOrderList()
         _tableView.tableFooterView = UIView.init(frame: CGRect.zero)
+        _tableView.alwaysBounceVertical = true
 
-        // Do any additional setup after loading the view.
+        _refreshControl.addTarget(self, action:#selector(fetchOrderList), for:UIControlEvents.valueChanged)
+        _tableView.addSubview(_refreshControl)
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func menuButtonPressed(_ sender: UIButton){
         let tabBar = self.tabBarController as! GOTabBarController
         tabBar.openDrawer()
+    }
+    
+    @objc func fetchOrderList() {
+        GOWebServiceManager.sharedManager.getOrderList(block : {[weak self](response, error) in
+            DispatchQueue.main.async {
+                self?._refreshControl.endRefreshing()
+                guard let data = response as? Data else {
+                    print("No product data")
+                    return
+                }
+                
+                guard let orders = try? JSONDecoder().decode(Orders.self, from: data ) else {
+                    print("Error: Couldn't decode data into Products")
+                    return
+                }
+                for item in orders.result {
+                    self?.orderList.append(item)
+                }
+                self?._tableView.reloadData()
+            }
+        })
     }
 
 }
@@ -42,12 +65,12 @@ class GOOrderReceivedTableCell: UITableViewCell{
 
 extension GOOrderReceivedVC: UITableViewDataSource, UITableViewDelegate{
     public func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int{
-        return 10
+        return orderList.count
     }
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
+        let order: Order = orderList[indexPath.row]
         let cell: GOOrderReceivedTableCell = _tableView.dequeueReusableCell(withIdentifier: _cellReuseIdentifier) as! GOOrderReceivedTableCell
-        let orderNumber = Int(indexPath.row + 1)
-        cell.orderNumberLabel.text = "Order \(orderNumber)"
+        cell.orderNumberLabel.text = "Order# \(order.orderid)"
         return cell
     }
     
@@ -57,6 +80,7 @@ extension GOOrderReceivedVC: UITableViewDataSource, UITableViewDelegate{
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let controller = self.storyboard?.instantiateViewController(withIdentifier: "GOOrderDetailsVC") as! GOOrderDetailsVC
+        controller.order = orderList[indexPath.row]
         controller.hidesBottomBarWhenPushed = true
         self.navigationController?.pushViewController(controller, animated: true)
     }

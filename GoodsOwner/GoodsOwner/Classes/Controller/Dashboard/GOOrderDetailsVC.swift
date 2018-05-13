@@ -12,11 +12,13 @@ class GOOrderDetailsVC: GOBaseVC {
 
     let _cellReuseIdentifier = "GOOrderDetailsCell"
     let _headerReuseIdentifier = "GOOrderDetailsHeader"
-    
     @IBOutlet weak var _collectionView: UICollectionView!
+    @IBOutlet weak var _pageHeader: UILabel!
+    var order: Order! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setColorForTitleViews()
 
         // Do any additional setup after loading the view.
         
@@ -24,13 +26,9 @@ class GOOrderDetailsVC: GOBaseVC {
         _collectionView.register(UINib.init(nibName: _headerReuseIdentifier, bundle: nil), forSupplementaryViewOfKind: UICollectionElementKindSectionHeader, withReuseIdentifier: _headerReuseIdentifier)
         let layout = _collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.sectionHeadersPinToVisibleBounds = true
+        _pageHeader.text = "Order# \(order.orderid)"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-    
     @IBAction func backButtonPressed(_ sender: UIButton) {
         _ = self.navigationController?.popViewController(animated: true)
     }
@@ -39,13 +37,17 @@ class GOOrderDetailsVC: GOBaseVC {
 
 extension GOOrderDetailsVC: UICollectionViewDelegate, UICollectionViewDataSource, UICollectionViewDelegateFlowLayout{
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return 15
+        return 1
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell{
-        let cell = _collectionView.dequeueReusableCell(withReuseIdentifier: _cellReuseIdentifier, for: indexPath)
-        let searialNo = indexPath.row + 1
-        
+        let product: Product = order.product
+        let cell = _collectionView.dequeueReusableCell(withReuseIdentifier: _cellReuseIdentifier, for: indexPath) as! GOOrderDetailsCell
+        let serialNo = indexPath.row + 1
+        cell._serialNo.text = "\(serialNo)"
+        cell._productNo.text = "\(product.productid)"
+        cell._productName.text = "\((product.productname)!)"
+        cell._quantity.text = "\((order.quantity)!)"
         return cell
     }
     
