@@ -9,6 +9,7 @@ PODS:
     - GoogleMaps/Base (= 2.5.0)
   - IQKeyboardManagerSwift (5.0.7)
   - Kingfisher (4.7.0)
+  - MBProgressHUD (1.1.0)
 
 DEPENDENCIES:
   - Alamofire
@@ -16,6 +17,7 @@ DEPENDENCIES:
   - GooglePlaces
   - IQKeyboardManagerSwift
   - Kingfisher
+  - MBProgressHUD
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
@@ -23,7 +25,8 @@ SPEC CHECKSUMS:
   GooglePlaces: dd70d9d71ea1c7944846afe67de3712c99b30a77
   IQKeyboardManagerSwift: 30fb3a61de1af53a95e02b80fb54ed0a19d5ede5
   Kingfisher: da6b005aa96d37698e3e4f1ccfe96a5b9bbf27d6
+  MBProgressHUD: e7baa36a220447d8aeb12769bf0585582f3866d9
 
-PODFILE CHECKSUM: 41db2e1b854b5dc768d7f904aad2628f22ae6a7f
+PODFILE CHECKSUM: 4cfbf0f4fc560bdd4a00a747c357256e0c6c1550
 
 COCOAPODS: 1.4.0

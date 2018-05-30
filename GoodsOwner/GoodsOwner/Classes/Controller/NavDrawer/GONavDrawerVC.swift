@@ -18,6 +18,7 @@ enum NavDrawerItemType {
     case products
     case profile
     case settings
+    case logout
 }
 
 protocol GONavDrawerDelegate {
@@ -29,7 +30,7 @@ class GONavDrawerVC: GOBaseVC, UITableViewDataSource, UITableViewDelegate {
     @IBOutlet weak var _tableView: UITableView!
     var delegate: GONavDrawerDelegate?
     let _cellReuseIdentifier = "GONavDrawerItemCell"
-    let _cellTitles = ["Products", "Profile", "Settings"]
+    let _cellTitles = ["Products", "Profile", "Settings", "Logout"]
     override func viewDidLoad() {
         super.viewDidLoad()
         setColorForTitleViews()
@@ -64,8 +65,11 @@ class GONavDrawerVC: GOBaseVC, UITableViewDataSource, UITableViewDelegate {
         else if indexPath.row == 1 {
             self.delegate?.didSelectItemType(.profile)
         }
-        else {
+        else if indexPath.row == 2 {
             self.delegate?.didSelectItemType(.settings)
+        }
+        else {
+            self.delegate?.didSelectItemType(.logout)
         }
     }
 }

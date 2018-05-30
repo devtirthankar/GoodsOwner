@@ -32,8 +32,8 @@ class GOSignInVC: GOBaseVC, GOSignInVMDelegate {
     }
     
     @IBAction func signInPressed(_ sender: UIButton) {
-        didSignIn()
-        return
+//        didSignIn()
+//        return
         signInViewModel.mobile = _mobile.text
         signInViewModel.password = _password.text
         signInViewModel.onSignInPressed()

@@ -17,6 +17,8 @@ enum GOWebServiceURLEndPoints{
     static let countrylist = "countries"
     static let citylist = "cities"
     static let storecategorylist = "storecategories"
+    static let imageurlproduction = "https://api.goods-dts.com"
+    static let imageurldevelopment = "https://api.smj.ltd/"
 }
 
 enum GOServerURL: String {
@@ -28,7 +30,8 @@ enum GOServerURL: String {
 
 class GOWebServiceManager: NSObject {
     var serviceArray = [GOWebServiceRequest]()
-    var baseURL = GOServerURL.development.rawValue
+    var baseURL = GOServerURL.production.rawValue
+    var baseImageURL = GOWebServiceURLEndPoints.imageurlproduction
     
     static let sharedManager : GOWebServiceManager = {
         let instance = GOWebServiceManager()

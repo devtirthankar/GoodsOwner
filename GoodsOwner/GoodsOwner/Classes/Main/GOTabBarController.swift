@@ -78,7 +78,6 @@ class GOTabBarController: UITabBarController, GONavDrawerDelegate {
             //case .home:
         //break
         case .products:
-            
             let storyboard = UIStoryboard(name: "Products", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "GOProductsVC")
             controller.hidesBottomBarWhenPushed = true
@@ -93,12 +92,28 @@ class GOTabBarController: UITabBarController, GONavDrawerDelegate {
             navcon.pushViewController(controller, animated: true);
             
         case .settings:
-            
             let storyboard = UIStoryboard(name: "Login", bundle: nil)
             let controller = storyboard.instantiateViewController(withIdentifier: "GOSettingsVC")
             controller.hidesBottomBarWhenPushed = true
             let navcon = self.selectedViewController as! UINavigationController;
             navcon.pushViewController(controller, animated: true);
+            
+        case .logout:
+            logoutuser()
+        }
+    }
+    
+    func logoutuser() {
+        DispatchQueue.main.async {
+            GOStorage.sharedStorage.deleteEntityFromDBEntityName("GOLogin")
+            GOStorage.sharedStorage.deleteEntityFromDBEntityName("GOUserProfile")
+            let viewControllers: [UIViewController] = self.navigationController!.viewControllers
+            for aViewController in viewControllers {
+                if(aViewController is GOSignInVC){
+                    self.navigationController!.popToViewController(aViewController, animated: true)
+                    return
+                }
+            }
         }
     }
     

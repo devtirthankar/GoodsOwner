@@ -17,4 +17,6 @@ pod 'Alamofire'
 
 pod 'Kingfisher'
 
+pod 'MBProgressHUD'
+
 end
