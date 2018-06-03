@@ -18,6 +18,8 @@ class GORegistrationVC: GOBaseVC, GODropDownViewDelegate {
     @IBOutlet weak var _countryCode: UITextField!
     var _categoryView : GODropDownView!
     var _transparentView : UIView!
+    
+    private var registrationVM: GOStoreRegistrationVM?
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -31,7 +33,7 @@ class GORegistrationVC: GOBaseVC, GODropDownViewDelegate {
     }
     
     @IBAction func signUpButtonPressed(_ sender: UIButton) {
-        let controller = self.storyboard?.instantiateViewController(withIdentifier: "GOStoreRegistrationVC")
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "GOOTPVC")
         self.navigationController?.pushViewController(controller!, animated: true)
     }
     
@@ -73,6 +75,32 @@ class GORegistrationVC: GOBaseVC, GODropDownViewDelegate {
             _categoryView.removeFromSuperview()
             _categoryView = nil
         }
+    }
+}
+    
+extension GORegistrationVC: GOStoreRegistrationVMDelegate {
+    
+    func registraionSucessfull() {
+        //Open OTP screen
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "GOOTPVC")
+        self.navigationController?.pushViewController(controller!, animated: true)
+    }
+    
+    func registraionError(_ message: String) {
+        GOAlertAndLoader.showAlertMessage(message)
+    }
+    
+    func dataFetchError(message: String) {
+        
+    }
+    func didFetchStoreCategories(categories: [StoreCategory]) {
+        
+    }
+    func didFetchCountries(countries: [Country]) {
+        
+    }
+    func didFetchCities(cities: [City]) {
+        
     }
 }
 

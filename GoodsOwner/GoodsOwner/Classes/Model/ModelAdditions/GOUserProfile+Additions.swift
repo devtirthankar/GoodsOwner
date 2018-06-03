@@ -27,4 +27,21 @@ extension GOUserProfile {
             self.countrycode = 0
         }
     }
+    
+    public static func loggedInUser() -> GOUserProfile?{
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "GOUserProfile")
+        weak var moc = GOStorage.sharedStorage.moc
+        var entity : GOUserProfile? = nil
+        moc?.performAndWait({
+            do{
+                let objects = try moc?.fetch(request) as? [GOUserProfile]
+                if let objects = objects{
+                    if objects.count > 0{
+                        entity = objects.last
+                    }
+                }
+            }catch{}
+        })
+        return entity
+    }
 }

@@ -13,6 +13,8 @@ protocol GOStoreRegistrationVMDelegate {
     func didFetchStoreCategories(categories: [StoreCategory])
     func didFetchCountries(countries: [Country])
     func didFetchCities(cities: [City])
+    func registraionSucessfull()
+    func registraionError(_ message: String)
 }
 
 class GOStoreRegistrationVM {
@@ -23,7 +25,9 @@ class GOStoreRegistrationVM {
     var delegate: GOStoreRegistrationVMDelegate?
     
     func fetchStoreCategories() {
+        GOAlertAndLoader.showLoading()
         GOWebServiceManager.sharedManager.getStoreCategoryList(block: {[weak self](response, error) in
+            GOAlertAndLoader.hideLoading()
             if let err = error {
                 self?.delegate?.dataFetchError(message: err.localizedDescription)
             }
@@ -44,7 +48,9 @@ class GOStoreRegistrationVM {
     }
     
     func fetchCountryList() {
+        GOAlertAndLoader.showLoading()
         GOWebServiceManager.sharedManager.getCountryList(block : {[weak self](response, error) in
+            GOAlertAndLoader.hideLoading()
             if let err = error {
                 self?.delegate?.dataFetchError(message: err.localizedDescription)
             }
@@ -64,7 +70,9 @@ class GOStoreRegistrationVM {
     }
     
     func fetchCityList(country: String) {
+        GOAlertAndLoader.showLoading()
         GOWebServiceManager.sharedManager.getCityList(country: country, block: {[weak self](response, error) in
+            GOAlertAndLoader.hideLoading()
             if let err = error {
                 self?.delegate?.dataFetchError(message: err.localizedDescription)
             }
@@ -80,6 +88,46 @@ class GOStoreRegistrationVM {
                 self?.cityList.append(item)
             }
             self?.delegate?.didFetchCities(cities: (self?.cityList)!)
+        })
+    }
+    
+    func onRegistratButtonPressed(name : String, email: String, password: String, phone: String, countrycode: String) {
+        
+        var message: String = ""
+        if name.count == 0 {
+            message = GOErrorAlertMessage.emptyName
+        }
+        else if email.count == 0 {
+            message = GOErrorAlertMessage.emptyEmail
+        }
+        else if GOUtilities.checkEmailValidity(email) != true {
+            message = GOErrorAlertMessage.invalidEmail
+        }
+        else if password.count == 0 {
+            message = GOErrorAlertMessage.emptyPassword
+        }
+        else if phone.count == 0 {
+            message = GOErrorAlertMessage.emptyMobile
+        }
+        else if countrycode.count == 0 {
+            message = GOErrorAlertMessage.emptyCountryCode
+        }
+        else {
+            //if validation successfull, call register api
+            registerUser(name: name, email: email, password: password, phone: phone, countrycode: countrycode)
+        }
+    }
+    
+    private func registerUser(name : String, email: String, password: String, phone: String, countrycode: String) {
+        GOAlertAndLoader.showLoading()
+        GOWebServiceManager.sharedManager.registerUser(name: name, email: email, password: password, phone: phone, countrycode: countrycode, block: {[weak self](response, error) in
+            GOAlertAndLoader.hideLoading()
+            if let err = error {
+                self?.delegate?.registraionError(err.localizedDescription)
+            }
+            else {
+                self?.delegate?.registraionSucessfull()
+            }
         })
     }
     

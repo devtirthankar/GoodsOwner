@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Comfortaa-Bold.ttf">
+            <string>Comfortaa-Bold</string>
+        </array>
+        <array key="Comfortaa-Regular.ttf">
+            <string>Comfortaa-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" restorationIdentifier="GOOrderReceivedTableCell" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="GOOrderReceivedTableCell" customModule="GoodsOwner" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="103.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pUy-ep-Pmu">
+                        <rect key="frame" x="8" y="8" width="304" height="18"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="16"/>
+                        <color key="textColor" red="0.12549019610000001" green="0.3921568627" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ws2-jJ-qvx">
+                        <rect key="frame" x="8" y="30" width="304" height="16"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="14"/>
+                        <color key="textColor" red="0.55694629600000001" green="0.58105844259999995" blue="0.54032558679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Au-pG-Wka">
+                        <rect key="frame" x="8" y="50" width="304" height="16"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="14"/>
+                        <color key="textColor" red="0.55694629600000001" green="0.58105844259999995" blue="0.54032558679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DB2-7Y-PyW">
+                        <rect key="frame" x="8" y="70" width="304" height="16"/>
+                        <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="14"/>
+                        <color key="textColor" red="0.55694629600000001" green="0.58105844259999995" blue="0.54032558679999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ind-gf-QZr">
+                        <rect key="frame" x="0.0" y="102.5" width="320" height="1"/>
+                        <color key="backgroundColor" red="0.85098039219999999" green="0.85098039219999999" blue="0.85098039219999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="aKV-t5-KRd"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pUy-ep-Pmu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="3cu-te-3E5"/>
+                    <constraint firstItem="5Au-pG-Wka" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="3gu-tg-eKD"/>
+                    <constraint firstAttribute="trailing" secondItem="pUy-ep-Pmu" secondAttribute="trailing" constant="8" id="9do-0o-elx"/>
+                    <constraint firstItem="DB2-7Y-PyW" firstAttribute="top" secondItem="5Au-pG-Wka" secondAttribute="bottom" constant="4" id="FRo-5d-SCh"/>
+                    <constraint firstItem="5Au-pG-Wka" firstAttribute="top" secondItem="Ws2-jJ-qvx" secondAttribute="bottom" constant="4" id="FhY-mm-AY8"/>
+                    <constraint firstAttribute="trailing" secondItem="5Au-pG-Wka" secondAttribute="trailing" constant="8" id="Fwp-TC-0Vp"/>
+                    <constraint firstItem="Ws2-jJ-qvx" firstAttribute="top" secondItem="pUy-ep-Pmu" secondAttribute="bottom" constant="4" id="KNh-1b-wnw"/>
+                    <constraint firstAttribute="bottom" secondItem="Ind-gf-QZr" secondAttribute="bottom" id="LS3-Lg-BPy"/>
+                    <constraint firstItem="DB2-7Y-PyW" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="PY2-4G-FbG"/>
+                    <constraint firstItem="Ws2-jJ-qvx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="XIs-Hw-TLB"/>
+                    <constraint firstItem="pUy-ep-Pmu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="8" id="bOp-eo-8Rq"/>
+                    <constraint firstAttribute="trailing" secondItem="DB2-7Y-PyW" secondAttribute="trailing" constant="8" id="hCJ-Uh-NPE"/>
+                    <constraint firstAttribute="trailing" secondItem="Ws2-jJ-qvx" secondAttribute="trailing" constant="8" id="rMX-CF-Sg4"/>
+                    <constraint firstItem="Ind-gf-QZr" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rYv-vb-ICK"/>
+                    <constraint firstAttribute="trailing" secondItem="Ind-gf-QZr" secondAttribute="trailing" id="sli-tR-mea"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="orderNumber" destination="pUy-ep-Pmu" id="IZN-eW-DxF"/>
+                <outlet property="productName" destination="5Au-pG-Wka" id="AFu-le-aU7"/>
+                <outlet property="quantity" destination="DB2-7Y-PyW" id="x4T-ew-xUS"/>
+                <outlet property="userPhone" destination="Ws2-jJ-qvx" id="aCz-M9-4uR"/>
+            </connections>
+            <point key="canvasLocation" x="25" y="82"/>
+        </tableViewCell>
+    </objects>
+</document>

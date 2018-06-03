@@ -29,7 +29,9 @@ class GOSignInVM{
     }
     
     private func signInUser() {
+        GOAlertAndLoader.showLoading()
         GOWebServiceManager.sharedManager.loginUser(mobile: mobile!, password: password!, block: {(response,error)in
+            GOAlertAndLoader.hideLoading()
             if let err = error {
                 self.delegate?.invalidInputDetected(err.localizedDescription)
             }

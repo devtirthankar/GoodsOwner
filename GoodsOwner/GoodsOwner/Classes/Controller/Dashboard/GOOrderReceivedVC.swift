@@ -20,6 +20,10 @@ class GOOrderReceivedVC: GOBaseVC {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        _tableView.register(UINib.init(nibName: _cellReuseIdentifier, bundle: nil), forCellReuseIdentifier: _cellReuseIdentifier)
+        //_collectionView.register(UINib.init(nibName: _cellReuseIdentifier, bundle: nil), forCellWithReuseIdentifier: _cellReuseIdentifier)
+        
         setColorForTitleViews()
         _tableView.dataSource = self
         _tableView.delegate = self
@@ -37,8 +41,10 @@ class GOOrderReceivedVC: GOBaseVC {
     }
     
     @objc func fetchOrderList() {
+        GOAlertAndLoader.showLoading()
         GOWebServiceManager.sharedManager.getOrderList(block : {[weak self](response, error) in
             DispatchQueue.main.async {
+                GOAlertAndLoader.hideLoading()
                 self?._refreshControl.endRefreshing()
                 guard let data = response as? Data else {
                     print("No product data")
@@ -59,7 +65,7 @@ class GOOrderReceivedVC: GOBaseVC {
 
 }
 
-class GOOrderReceivedTableCell: UITableViewCell{
+class GOOrderReceivedTableCell1: UITableViewCell{
     @IBOutlet weak var orderNumberLabel: UILabel!
 }
 
@@ -70,12 +76,17 @@ extension GOOrderReceivedVC: UITableViewDataSource, UITableViewDelegate{
     public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell{
         let order: Order = orderList[indexPath.row]
         let cell: GOOrderReceivedTableCell = _tableView.dequeueReusableCell(withIdentifier: _cellReuseIdentifier) as! GOOrderReceivedTableCell
-        cell.orderNumberLabel.text = "Order# \(order.orderid)"
+        cell.orderNumber.text = NSLocalizedString("Order Number: #\(String(describing: order.orderid))", comment: "")
+        if let userinfo = order.userinfo {
+            cell.userPhone.text = userinfo.mobile ?? ""
+        }
+        cell.productName.text = order.product.productname
+        cell.quantity.text = NSLocalizedString("Quantity: \(String(describing: order.quantity!))", comment: "")
         return cell
     }
     
     public func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 50
+        return 104
     }
     
     public func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {

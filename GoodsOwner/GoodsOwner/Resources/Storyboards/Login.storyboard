@@ -1375,7 +1375,7 @@
                                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
                                                 <connections>
-                                                    <action selector="signUpButtonPressed:" destination="JoE-KC-ZZ3" eventType="touchUpInside" id="6al-8R-IO0"/>
+                                                    <action selector="signUpButtonPressed:" destination="JoE-KC-ZZ3" eventType="touchUpInside" id="xqU-jY-KmG"/>
                                                 </connections>
                                             </button>
                                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirm password" textAlignment="natural" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="c8b-qj-wQu">
@@ -1691,9 +1691,91 @@
             </objects>
             <point key="canvasLocation" x="-2164" y="1557.5712143928038"/>
         </scene>
+        <!--GOOTPVC-->
+        <scene sceneID="a4I-9n-OoZ">
+            <objects>
+                <viewController storyboardIdentifier="GOOTPVC" id="cy3-hf-WTr" customClass="GOOTPVC" customModule="GoodsOwner" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zeb-K8-XwZ"/>
+                        <viewControllerLayoutGuide type="bottom" id="BNz-lX-cQa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="Q7v-Ne-UcV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter OTP sent to your mobile:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Fsv-TJ-WwB">
+                                <rect key="frame" x="16" y="77.5" width="343" height="18"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Regular" family="Comfortaa" pointSize="16"/>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="OTP" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWP-l1-MkY">
+                                <rect key="frame" x="137.5" y="127.5" width="100" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="5eP-xV-VBu"/>
+                                    <constraint firstAttribute="width" constant="100" id="fz6-Y5-siA"/>
+                                </constraints>
+                                <color key="textColor" red="0.33333333329999998" green="0.33333333329999998" blue="0.33333333329999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dae-Un-G6x">
+                                <rect key="frame" x="48" y="189.5" width="279" height="34"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" red="0.12549019610000001" green="0.3921568627" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="submitPressed:" destination="cy3-hf-WTr" eventType="touchUpInside" id="5Ax-36-QPc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jRj-KA-4hP">
+                                <rect key="frame" x="8" y="15.5" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="HSa-lq-z5P"/>
+                                    <constraint firstAttribute="height" constant="30" id="hSS-PV-aLQ"/>
+                                </constraints>
+                                <state key="normal" title="Back" image="backBttn"/>
+                                <connections>
+                                    <action selector="backButtonPressed:" destination="cy3-hf-WTr" eventType="touchUpInside" id="4G9-lJ-IBY"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Validate OTP" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0CE-Uv-cCB">
+                                <rect key="frame" x="127.5" y="20" width="121.5" height="21"/>
+                                <fontDescription key="fontDescription" name="Comfortaa-Bold" family="Comfortaa" pointSize="18"/>
+                                <color key="textColor" red="0.12549019610000001" green="0.3921568627" blue="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="dae-Un-G6x" firstAttribute="centerX" secondItem="Q7v-Ne-UcV" secondAttribute="centerX" id="3uQ-PR-ogh"/>
+                            <constraint firstItem="0CE-Uv-cCB" firstAttribute="centerX" secondItem="Q7v-Ne-UcV" secondAttribute="centerX" id="Lav-jj-JOK"/>
+                            <constraint firstItem="dae-Un-G6x" firstAttribute="top" secondItem="gWP-l1-MkY" secondAttribute="bottom" constant="32" id="PO5-Vk-PhF"/>
+                            <constraint firstItem="gWP-l1-MkY" firstAttribute="top" secondItem="Fsv-TJ-WwB" secondAttribute="bottom" constant="32" id="W1D-TP-SSd"/>
+                            <constraint firstItem="dae-Un-G6x" firstAttribute="leading" secondItem="Q7v-Ne-UcV" secondAttribute="leading" constant="48" id="Zbd-sB-2JZ"/>
+                            <constraint firstAttribute="trailing" secondItem="Fsv-TJ-WwB" secondAttribute="trailing" constant="16" id="dFE-xs-ugj"/>
+                            <constraint firstItem="gWP-l1-MkY" firstAttribute="centerX" secondItem="Q7v-Ne-UcV" secondAttribute="centerX" id="ebe-Tq-VlZ"/>
+                            <constraint firstAttribute="trailing" secondItem="dae-Un-G6x" secondAttribute="trailing" constant="48" id="hhV-DX-ORF"/>
+                            <constraint firstItem="Fsv-TJ-WwB" firstAttribute="top" secondItem="jRj-KA-4hP" secondAttribute="bottom" constant="32" id="ikl-qn-ben"/>
+                            <constraint firstItem="jRj-KA-4hP" firstAttribute="leading" secondItem="Q7v-Ne-UcV" secondAttribute="leading" constant="8" id="ixg-88-Lf1"/>
+                            <constraint firstItem="0CE-Uv-cCB" firstAttribute="top" secondItem="zeb-K8-XwZ" secondAttribute="bottom" id="mhG-Ou-HI7"/>
+                            <constraint firstItem="0CE-Uv-cCB" firstAttribute="centerY" secondItem="jRj-KA-4hP" secondAttribute="centerY" id="pbh-wh-Z16"/>
+                            <constraint firstItem="Fsv-TJ-WwB" firstAttribute="leading" secondItem="Q7v-Ne-UcV" secondAttribute="leading" constant="16" id="q6R-3G-yvg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="_otp" destination="gWP-l1-MkY" id="MbI-9s-kbW"/>
+                        <outlet property="_submitButton" destination="dae-Un-G6x" id="Xub-3G-yGg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="k5j-cp-dFP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1442" y="1558"/>
+        </scene>
     </scenes>
     <resources>
         <image name="GoodsLogo" width="167" height="167"/>
+        <image name="backBttn" width="16" height="16"/>
         <image name="checkboxUns" width="75" height="75"/>
         <image name="dropdown" width="50" height="50"/>
         <image name="icon_back_white" width="24" height="30"/>

@@ -14,6 +14,7 @@ class GOOrderDetailsVC: GOBaseVC {
     let _headerReuseIdentifier = "GOOrderDetailsHeader"
     @IBOutlet weak var _collectionView: UICollectionView!
     @IBOutlet weak var _pageHeader: UILabel!
+    @IBOutlet weak var _totalPrice: UILabel!
     var order: Order! = nil
     
     override func viewDidLoad() {
@@ -27,6 +28,12 @@ class GOOrderDetailsVC: GOBaseVC {
         let layout = _collectionView.collectionViewLayout as? UICollectionViewFlowLayout
         layout?.sectionHeadersPinToVisibleBounds = true
         _pageHeader.text = "Order# \(order.orderid)"
+        updateTotalPrice()
+    }
+    
+    func updateTotalPrice() {
+        let totalprice = Float((Float32(order.quantity!) * order.product.price!) * 1.05)
+        _totalPrice.text = "\(totalprice)"
     }
 
     @IBAction func backButtonPressed(_ sender: UIButton) {

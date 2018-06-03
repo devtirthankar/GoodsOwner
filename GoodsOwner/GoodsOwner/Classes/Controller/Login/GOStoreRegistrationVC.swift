@@ -113,6 +113,16 @@ class GOStoreRegistrationVC: GOBaseVC, GODropDownViewDelegate, GOStoreRegistrati
     }
     
     //MARK: GOStoreRegistrationVMDelegate
+    func registraionSucessfull() {
+        //Open OTP screen
+        let controller = self.storyboard?.instantiateViewController(withIdentifier: "GOOTPVC")
+        self.navigationController?.pushViewController(controller!, animated: true)
+    }
+    
+    func registraionError(_ message: String) {
+        GOAlertAndLoader.showAlertMessage(message)
+    }
+    
     func dataFetchError(message: String) {
         GOAlertAndLoader.showAlertMessage(message)
     }

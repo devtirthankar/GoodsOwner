@@ -20,5 +20,6 @@ enum GOMessage {
     static let selectStoreCetegory = "Choose Store Category"
     static let selectCountry = "Choose Country"
     static let selectCity = "Choose City"
+    static let registrationSuccess = "Thank you for registering. We'll get back to you shortly."
 }
 

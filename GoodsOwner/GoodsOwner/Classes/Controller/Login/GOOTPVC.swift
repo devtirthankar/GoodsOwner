@@ -36,12 +36,11 @@ class GOOTPVC: GOBaseVC {
     }
     
     @IBAction func submitPressed(_ sender: UIButton) {
-        /*
         if _otp.text?.count == 0 {
             GOAlertAndLoader.showAlertMessage("Please enter OTP.")
         }
         else {
-            GOWebServiceManager.sharedManager.validateOTP(otp: _otp.text!, block : {[weak self](response, error) in
+            GOWebServiceManager.sharedManager.validateOTP(otp: _otp.text!, block: {[weak self](response, error) in
                 if let err = error as NSError? {
                     if let errorMessage = err.userInfo["message"] as? String {
                         GOAlertAndLoader.showAlertMessage(errorMessage)
@@ -49,16 +48,21 @@ class GOOTPVC: GOBaseVC {
                 }
                 else {
                     DispatchQueue.main.async {
-                        self?.bringUpDashboard()
+                        self?.OTPValidationSuccess()
                     }
                 }
             })
-        }*/
+        }
     }
     
-    func bringUpDashboard() {
-        let storyboard = UIStoryboard(name: "Main", bundle: nil)
-        let controller = storyboard.instantiateViewController(withIdentifier: "GOTabBarController")
-        self.navigationController?.pushViewController(controller, animated: true)
+    func OTPValidationSuccess() {
+        let viewControllers : [UIViewController] = self.navigationController!.viewControllers
+        for aViewController in viewControllers {
+            if(aViewController is GOSignInVC) {
+                self.navigationController?.popToViewController(aViewController, animated: true)
+                GOAlertAndLoader.showAlertMessage(NSLocalizedString(GOMessage.registrationSuccess, comment: GOMessage.registrationSuccess))
+                return
+            }
+        }
     }
 }

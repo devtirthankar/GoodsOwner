@@ -49,6 +49,9 @@
 		0D8ADEF020330EA900764884 /* GORegistrationCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8ADEEE20330EA900764884 /* GORegistrationCell.xib */; };
 		0D8ADEF22033F04A00764884 /* GORegistrationHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8ADEF12033F04A00764884 /* GORegistrationHeader.swift */; };
 		0D8ADEF42033F05A00764884 /* GORegistrationHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8ADEF32033F05A00764884 /* GORegistrationHeader.xib */; };
+		0DA0F3B520C2459800ACDC15 /* GOUtilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA0F3B420C2459800ACDC15 /* GOUtilities.swift */; };
+		0DA0F3B820C2A2D300ACDC15 /* GOOrderReceivedTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA0F3B620C2A2D300ACDC15 /* GOOrderReceivedTableCell.swift */; };
+		0DA0F3B920C2A2D300ACDC15 /* GOOrderReceivedTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DA0F3B720C2A2D300ACDC15 /* GOOrderReceivedTableCell.xib */; };
 		0DA4443A20A2C2F300796BCA /* GOOTPVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4443920A2C2F300796BCA /* GOOTPVC.swift */; };
 		0DA4444020A2C8BF00796BCA /* GODataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4443E20A2C8BF00796BCA /* GODataModel.xcdatamodeld */; };
 		0DA4444720A2CAE800796BCA /* GOLogin+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DA4444320A2CAE800796BCA /* GOLogin+CoreDataClass.swift */; };
@@ -123,6 +126,9 @@
 		0D8ADEEE20330EA900764884 /* GORegistrationCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GORegistrationCell.xib; sourceTree = "<group>"; };
 		0D8ADEF12033F04A00764884 /* GORegistrationHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GORegistrationHeader.swift; sourceTree = "<group>"; };
 		0D8ADEF32033F05A00764884 /* GORegistrationHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GORegistrationHeader.xib; sourceTree = "<group>"; };
+		0DA0F3B420C2459800ACDC15 /* GOUtilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOUtilities.swift; sourceTree = "<group>"; };
+		0DA0F3B620C2A2D300ACDC15 /* GOOrderReceivedTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GOOrderReceivedTableCell.swift; sourceTree = "<group>"; };
+		0DA0F3B720C2A2D300ACDC15 /* GOOrderReceivedTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GOOrderReceivedTableCell.xib; sourceTree = "<group>"; };
 		0DA4443920A2C2F300796BCA /* GOOTPVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GOOTPVC.swift; sourceTree = "<group>"; };
 		0DA4443F20A2C8BF00796BCA /* GODataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = GODataModel.xcdatamodel; sourceTree = "<group>"; };
 		0DA4444320A2CAE800796BCA /* GOLogin+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "GOLogin+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -276,6 +282,7 @@
 		0D0410032009AE8F00F36EC3 /* GOUtility */ = {
 			isa = PBXGroup;
 			children = (
+				0DA0F3B420C2459800ACDC15 /* GOUtilities.swift */,
 				0D0410052009AE8F00F36EC3 /* GOColor.swift */,
 				0D8ADEE8203301EB00764884 /* GOButton.swift */,
 				0D1CA8D2204E9A5F006B246B /* GOAlertAndLoader.swift */,
@@ -395,6 +402,8 @@
 				0DC99B7B203AE43D00C8F46F /* GOProductCell.xib */,
 				0D1AA20C203C2E260073ADCA /* GOProfileReviewCell.swift */,
 				0D1AA20D203C2E260073ADCA /* GOProfileReviewCell.xib */,
+				0DA0F3B620C2A2D300ACDC15 /* GOOrderReceivedTableCell.swift */,
+				0DA0F3B720C2A2D300ACDC15 /* GOOrderReceivedTableCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -526,6 +535,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0DA0F3B920C2A2D300ACDC15 /* GOOrderReceivedTableCell.xib in Resources */,
 				0D843B082030529200AB0FA8 /* Products.storyboard in Resources */,
 				0DC99B7D203AE43D00C8F46F /* GOProductCell.xib in Resources */,
 				0DCE3644202CA41A0081D962 /* LaunchScreen.storyboard in Resources */,
@@ -658,12 +668,14 @@
 				0D843AFE2030136500AB0FA8 /* GOProductsVC.swift in Sources */,
 				0DC99B7C203AE43D00C8F46F /* GOProductCell.swift in Sources */,
 				0D8ADEE9203301EB00764884 /* GOButton.swift in Sources */,
+				0DA0F3B520C2459800ACDC15 /* GOUtilities.swift in Sources */,
 				0DA4444E20A2CB2000796BCA /* GOUserProfile+Additions.swift in Sources */,
 				0D1AA20A203C132B0073ADCA /* GOProfileGeneralVC.swift in Sources */,
 				0DCE364A202D553A0081D962 /* GOTabBarController.swift in Sources */,
 				0D1CA8D3204E9A5F006B246B /* GOAlertAndLoader.swift in Sources */,
 				0D0748042036F0730023EA9D /* GOWebPageVC.swift in Sources */,
 				0D7E7C1E20A41B5A00E11691 /* GOStoreRegistrationVM.swift in Sources */,
+				0DA0F3B820C2A2D300ACDC15 /* GOOrderReceivedTableCell.swift in Sources */,
 				0D0410002009AE0D00F36EC3 /* GOBaseVC.swift in Sources */,
 				0DA4443A20A2C2F300796BCA /* GOOTPVC.swift in Sources */,
 			);

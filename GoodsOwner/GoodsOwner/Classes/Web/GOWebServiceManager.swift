@@ -24,7 +24,7 @@ enum GOWebServiceURLEndPoints{
 enum GOServerURL: String {
     case development = "https://api.smj.ltd/api/v1/"
     case test = "test"
-    case production = "https://api.goods-dts.com/"
+    case production = "https://api.goods-dts.com/api/v1/"
     case staging = "http://www.goods-dts.com/goodsapp"
 }
 
@@ -65,6 +65,16 @@ extension GOWebServiceManager{
     
     func loginUser(mobile: String, password: String, block : @escaping GOWSCompletionBlock) {
         let service = GOLoginRequest.init(manager: self, mobile: mobile, password: password, block: block)
+        self.startRequest(service: service)
+    }
+    
+    func registerUser(name : String, email: String, password: String, phone: String, countrycode: String, block : @escaping GOWSCompletionBlock){
+        let service = GOWSRegistrationRequest.init(manager: self, name: name, email: email, password: password, phone: phone, countrycode: countrycode, block: block)
+        self.startRequest(service: service)
+    }
+    
+    func validateOTP(otp: String, block : @escaping GOWSCompletionBlock) {
+        let service = GOWSOTPValidationRequest(manager: self, otp: otp, block: block)
         self.startRequest(service: service)
     }
     
